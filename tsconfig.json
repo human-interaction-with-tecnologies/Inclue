@@ -17,6 +17,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/components/Layout.jsx", "src/components/Layout.jsx", "src/pages/api/considerationsByCategory.js", "src/pages/api/filterConsiderations.js", "src/pages/api/dummyTeam.js", "src/pages/api/dummyPersonas.js", "src/pages/api/dummyGroup.js", "src/pages/api/dummyCategories.js", "src/pages/api/dummyConsiderations.js", "src/pages/api/dummyConsiderations.js"],
   "exclude": ["node_modules"]
 }
