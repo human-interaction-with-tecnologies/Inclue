@@ -18,9 +18,16 @@ const menuItems = [
     { id: 2, label: "Considerações de Design", icon: ArticleIcon, link: "/inclue/considerations" },
     { id: 3, label: "Personas", icon: UsersIcon, link: "/inclue/personas" },
     { id: 4, label: "Perguntas e Respostas",  icon: ArticleIcon, link: "/inclue/quenstions" },
-    { id: 4, label: "Sobre", icon: ArticleIcon, link: "/inclue/about" },
+    { id: 5, label: "Sobre", icon: ArticleIcon, link: "/inclue/about" },
 ];
 
+
+// Para implmenetar uma página auxiliar, voc~e deve criar aqui o item auxiliar com id do pai e a rota do cpage
+const subMenuItem = [
+  { id: 2, label: "Considerações de Design", icon: ArticleIcon, link: "/inclue/consideration" },
+];
+
+const menus = [].concat(menuItems, subMenuItem);
 
 const Sidebar = () => {
   const [toggleCollapse, setToggleCollapse] = useState(false);
@@ -29,8 +36,9 @@ const Sidebar = () => {
   const router = useRouter();
 
   const activeMenu = useMemo(
-    () => menuItems.find((menu) => menu.link === router.pathname),
+    () => menus.find((menu) => menu.link === router.pathname),
     [router.pathname]
+    
   );
 
   const wrapperClasses = classNames(
@@ -52,7 +60,7 @@ const Sidebar = () => {
     return classNames(
       "flex items-center cursor-pointer hover:bg-light-lighter rounded w-full overflow-hidden whitespace-nowrap",
       {
-        ["bg-light-lighter"]: activeMenu.id === menu.id,
+        ["bg-light-lighter"]: (activeMenu.id === menu.id),
       }
     );
   };
@@ -87,8 +95,7 @@ const Sidebar = () => {
           {isCollapsible && (
             <button
               className={collapseIconClasses}
-              onClick={handleSidebarToggle}
-            >
+              onClick={handleSidebarToggle}>
               <CollapsIcon />
             </button>
           )}
