@@ -5,14 +5,14 @@ export const dummyTeam = [
     name: "John Doe",
     description: "Lorem ipsum dolor sit amet",
     email: "john@example.com",
-    image: "john.jpg"
+    image: "/images/about/team/team.png"
   },
   {
     id: 2,
     name: "Jane Smith",
     description: "Consectetur adipiscing elit",
     email: "jane@example.com",
-    image: "jane.jpg"
+    image: "/images/about/team/team.png"
   },
   // Add more objects as needed
 ];
