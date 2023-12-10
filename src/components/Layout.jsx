@@ -1,12 +1,13 @@
 import React from "react";
 import Sidebar from "./Sidebar";
 
-const Layout = ({ children, title}) => {
+
+const Layout = ({ children, title }) => {
   return (
     <div className="h-screen flex flex-row justify-start">
       <Sidebar />
-      <div className="bg-primary flex-1 p-4 text-white">
-        <div>
+      <div className="bg-primary flex-1 p-4">
+        <div className="mb-4 text-white">
           <h1>{title}</h1>
         </div>
         <div>
@@ -16,6 +17,7 @@ const Layout = ({ children, title}) => {
     </div>
   );
 };
+
 
 
 export default Layout;
