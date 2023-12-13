@@ -12,7 +12,7 @@ export default function ConsiderationDetailPage() {
 
     return (
         <Layout title="Considerações de Design e Avaliação"> 
-            
+            <div className="text-justify">
                 <Link className="flex" href="/inclue/considerations">
                     <div  className="flex rounded-lg shadow-lg p-2 mb-3 gap-2 items-center bg-white ">
                         <svg width="18" height="15" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -21,53 +21,47 @@ export default function ConsiderationDetailPage() {
                         Voltar
                     </div>
                 </Link>
-            
+            </div>
             <br />
-            <div>
-                <div className="bg-white rounded-lg shadow-lg p-6">
-                    <div className="text-justify">
-                        <h1 className="text-2xl font-bold mb-4">{consideration?.title}</h1>
-                    </div>
+            <div className="text-justify bg-white rounded-lg shadow-lg p-6">
+                <div>
+                    <h1 className="text-2xl font-bold mb-4">{consideration?.title}</h1>
                     <div className="bg-primary text-white rounded-lg">
                         {consideration?.category}
                     </div>
                     <br />
-                    <div className="text-justify">
-                        <p className="mb-4">{consideration?.content}</p>
-                    </div>
-                    <div className="text-justify">
-                        <ul className="flex space-x-4">
-                            {consideration?.images.map((image) => {
-                                return (
-                                    <li>
-                                        <Image  src={image.url} 
-                                                width={250}
-                                                height={250}
-                                                alt={image.text} 
-                                        />
-                                    </li>
-                                );
-                            })}
-                        </ul>
-                    </div>                        
-                <div>
+                    <p className="mb-4">{consideration?.content}</p>
                 </div>
-                    <div className="text-justify">
-                        <h1 className="text-2xl font-bold mb-4">Outras Referências</h1>
-                    </div>
-                    <div className="text-justify text-blue-500 underline">
-                        <ol>
-                            {consideration?.references.map((referece) => {
-                                return (
-                                    <li>
-                                        <Link href={referece.url} >
-                                            {referece.title}
-                                        </Link>
-                                    </li>
-                                );
-                            })}
-                        </ol>
-                    </div>
+                <br />
+                <div>
+                    <ul className="flex space-x-4">
+                        {consideration?.images.map((image) => {
+                            return (
+                                <li>
+                                    <Image  src={image.url} 
+                                            width={250}
+                                            height={250}
+                                            alt={image.text} 
+                                    />
+                                </li>
+                            );
+                        })}
+                    </ul>
+                </div>
+                <br />
+                <div>
+                    <h1 className="text-2xl font-bold mb-4">Outras Referências</h1>
+                    <ol className="text-justify text-blue-500 underline">
+                        {consideration?.references.map((referece) => {
+                            return (
+                                <li>
+                                    <Link href={referece.url} >
+                                        {referece.title}
+                                    </Link>
+                                </li>
+                            );
+                        })}
+                    </ol>
                 </div>
             </div>
         </Layout>        
