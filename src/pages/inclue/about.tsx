@@ -40,7 +40,10 @@ export default function AboutPage() {
                 <h3 className="text-lg font-bold mb-2">Endereço</h3>
                 <p className="mb-2">Rua Augusto Corrêa - nº 01 – Guamá</p>
                 <p className="mb-4">Belém, Pará, Brasil – CEP: 66075110</p>
-                <img src="https://maps.googleapis.com/maps/api/staticmap?center=YOUR_LOCATION&zoom=13&size=600x300&maptype=roadmap&key=YOUR_API_KEY" alt="Mapa estático" className="w-full rounded-lg" />
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.497609398409!2d-48.458639825915505!3d-1.4742696985118746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x92a48dbe8d60aec1%3A0xfcadc7d40fe3a62d!2sHIT%20-%20Human%20Interaction%20with%20Technologies%20Research%20Group!5e0!3m2!1spt-BR!2sbr!4v1702479132014!5m2!1spt-BR!2sbr"
+                        style={{width:"100%", height:"400px"}}
+                        loading="lazy" >
+                </iframe>
                 
                 <h2 className="text-2xl font-bold mt-8 mb-8">Outras Referências</h2>
                 <ul className="list-disc ml-8" style={{color:"#005A9F"}}>
