@@ -4,8 +4,8 @@ import Layout from "../components/Layout";
 export default function Home() {
   return (
     <Layout title="Início">
-      <div className="bg-white shadow-md rounded-lg py-5 px-5">
-        <h2 className="text-lg font-bold mb-2">Bem-vindo ao Inclue</h2>
+      <div className="bg-white shadow-md rounded-lg py-5 px-5 mt-7">
+        <h2 className="text-lg font-bold mb-8">Bem-vindo ao Inclue</h2>
         <div className="text-gray-600 grid gap-3 ">
           <span>
             A Inclue é uma plataforma que tem como o objetivo fortalecer a inclusão digital de pessoas que historicamente estiveram distantes das evoluções computacionais, chamados de usuários emergentes, e enfrentam barreiras para acesso a sistemas de pagamentos instantâneos.

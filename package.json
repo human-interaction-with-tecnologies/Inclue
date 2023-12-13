@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "pa11y-html": "pa11y --reporter html http://localhost:3001/ > results.html",
+    "pa11y-html": "pa11y --reporter html http://localhost:3001/inclue/considerations > results.html",
     "pa11y-csv": "pa11y --reporter csv http://localhost:3001/ > results.csv",
     "pa11y-json": "pa11y --reporter json http://localhost:3001/ > results.json",
     "pa11y-ci": "pa11y-ci http://localhost:3001/"
