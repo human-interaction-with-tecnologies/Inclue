@@ -89,6 +89,15 @@ export default function QuestionsPage() {
                         <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded self-end w-screen md:w-32 mt-5 mb-1"
                                 style={{backgroundColor:"#005A9F"}}
                                 onClick={() => {
+                                    if(setting.categories.length == 0) {
+                                        window.alert("Selecione uma categoria de perguntas");
+                                        return;
+                                    }
+
+                                    if(setting.quantity == 0 || setting.quantity > questionsMax) {
+                                        window.alert("Selecione uma quantidade de perguntas válida");
+                                        return;
+                                    }
                                     setStep(step+1);
                                     preProssegingQuestions();
                                 }} >
@@ -126,6 +135,10 @@ export default function QuestionsPage() {
                         <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded self-end w-screen md:w-32 mt-5 mb-1"
                                 style={{backgroundColor:"#005A9F"}}
                                 onClick={(e) => {
+                                    if(answersIdInMoment == -1) {
+                                        window.alert("Selecione uma opção");
+                                        return;
+                                    }
                                     const answers = setting.questions[step-1].options.find((option: any) => option.id === answersIdInMoment);
                                     setSetting({ ...setting, answers: [...setting.answers, { id: setting.questions[step-1].id, option: answers }] });
                                     setAnswersIdInMoment(-1);
