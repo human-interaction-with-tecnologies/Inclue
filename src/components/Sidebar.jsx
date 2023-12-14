@@ -17,7 +17,7 @@ const menuItems = [
     { id: 1, label: "Inicio", icon: HomeIcon, link: "/" },
     { id: 2, label: "Considerações de Design", icon: ArticleIcon, link: "/inclue/considerations" },
     { id: 3, label: "Personas", icon: UsersIcon, link: "/inclue/personas" },
-    { id: 4, label: "Perguntas e Respostas",  icon: ArticleIcon, link: "/inclue/quenstions" },
+    { id: 4, label: "Perguntas e Respostas",  icon: ArticleIcon, link: "/inclue/questions" },
     { id: 5, label: "Sobre", icon: ArticleIcon, link: "/inclue/about" },
 ];
 
