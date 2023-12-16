@@ -21,7 +21,8 @@ export default function QuestionsPage() {
         } else {
             if(optionAuxiliar !== 0) {
                 if(actualCorrectQuestions) {
-                    setCorrectQuestionsCount(correctQuestionsCount + 1);
+                    var aux = correctQuestionsCount + 1;
+                    setCorrectQuestionsCount(aux);
                     setPreviousCorrectQuestions(true);
                 } else {
                     setPreviousCorrectQuestions(false);
@@ -48,13 +49,6 @@ export default function QuestionsPage() {
         }
     };
 
-    const handleConfirm = () => {
-        if(optionAuxiliar !== 0) {
-            setStep(step + 1);
-           
-            setOptionAuxiliar(0);
-        }
-    };
 
     const handleReset = () => {
         setStep(0);
@@ -76,7 +70,7 @@ export default function QuestionsPage() {
 
     const handleOptionSelection = (optionId: number) => {
         setOptionAuxiliar(optionId);
-        
+       
         if(actualQuestion.options.find((option) => option.id === optionId)?.value) {
             setActualCorrectQuestions(true);
         } else {
@@ -84,16 +78,13 @@ export default function QuestionsPage() {
         }
     };
 
-    useEffect(() => {
-       
-        if(step === selectedQuestions.length) {
-            const correctsCount = selectedQuestions.filter((question) => {
-                const correctOption = question.options.find((option) => option.value);
-                return correctOption?.selected;
-            }).length;
-            setCorrectQuestionsCount(correctsCount);
+    const handleConfirm = () => {
+        if(optionAuxiliar !== 0) {
+            setStep(step + 1);
+            setOptionAuxiliar(0);
         }
-    }, [step]);
+    };
+
 
     return (
         <Layout title="Perguntas e Respostas">
@@ -166,8 +157,11 @@ export default function QuestionsPage() {
                 )}
 
                 {step > selectedQuestions.length && (
-                    <div>
+                    <div className='text-justify leading-loose'>
                         <h1 className="text-2xl font-bold mb-4">Você respondeu {correctQuestionsCount} perguntas corretamente</h1>
+                        <p>Agradecemos o tempo dedicado para entender as considerações de design e avaliação de sistemas de pagamento e usuários emergentes.</p>
+                        <p>Fortalecer a inclusão é fornecer oportunidades para que as pessoas tenham acesso pleno em diversos serviços da sociedade.</p>
+                        <br />
                         <div className='flex  gap-2'>    
                            <button className="flex rounded-lg shadow-lg p-2 mb-3 gap-2 items-center bg-primary text-white font-bold" onClick={handleReset}>Reiniciar</button>
                         </div>
