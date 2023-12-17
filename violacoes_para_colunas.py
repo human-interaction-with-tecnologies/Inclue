@@ -37,9 +37,9 @@ def criar_novo_arquivo_csv(nome_arquivo_saida, dados_com_coluna):
         escritor_csv.writerows(dados_com_coluna)
 
 # Etapa 5: Executar todas as etapas
-nome_arquivo_entrada = 'csv_final_diretrizes.csv'  # Substitua com o nome do seu arquivo CSV
+nome_arquivo_entrada = '7-results-all.csv'  # Substitua com o nome do seu arquivo CSV
 dados_originais = ler_arquivo_csv(nome_arquivo_entrada)
 dados_tratados = tratar_linhas(dados_originais)
 dados_com_coluna = adicionar_coluna_tratada(dados_tratados)
-nome_arquivo_saida = 'novo_arquivo_tratado1.csv'  # Substitua com o nome desejado para o novo arquivo CSV
+nome_arquivo_saida = '8-results-finals.csv'  # Substitua com o nome desejado para o novo arquivo CSV
 criar_novo_arquivo_csv(nome_arquivo_saida, dados_com_coluna)
