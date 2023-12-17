@@ -28,26 +28,35 @@ export default function ConsiderationsPage() {
         <div className="text-justify">
           <h1 className="text-2xl font-bold mb-4">Filtro</h1>
         </div>
-        <input
-          type="text"
-          placeholder="Buscar"
-          className="border border-gray-300 rounded-lg p-2 mb-4"
-          value={searchTerm}
-          onChange={handleSearch}
-        />
+        <div className="text-justify">
+          <label htmlFor="searchInput" className="p-2">Pesquisar</label>
+          <input
+            type="text"
+            id="searchInput"
+            placeholder="Pesquisar"
+            className="border border-gray-300 rounded-lg p-2 mb-4"
+            value={searchTerm}
+            onChange={handleSearch}
+            name="Pesquisar"
+          />
+        </div>
         <ul className="flex space-x-4">
           {dummyCategories.map((category) => {
             return (
               <li className="bg-primary text-justify text-white rounded-lg">
                 <Link href={`/inclue/considerations?filter=${category}`} >
-                  {category}
+                  <span className="bg-blue-600 text-white rounded-lg" style={{ backgroundColor: "#2b71e6" }}>
+                    {category}
+                  </span>
                 </Link>
               </li>
             );
           })}
           <li className="bg-primary text-justify text-white rounded-lg">
             <Link href={`/inclue/considerations`} >
-              Todos
+              <span className="bg-blue-600 text-white rounded-lg" style={{ backgroundColor: "#2b71e6" }}>
+                Todos
+              </span>
             </Link>
           </li>
         </ul>

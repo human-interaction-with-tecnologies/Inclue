@@ -14,7 +14,9 @@ export default function ConsiderationCard(props: ConsiderationCardProps) {
                 {props.title}
             </div>
             <div className="bg-primary text-justify text-white rounded-lg">
-                {props.category}
+                <span className="bg-blue-600 text-white rounded-lg" style={{ backgroundColor: "#2b71e6" }}>
+                    {props.category}
+                </span>
             </div>
             <div className="text-justify">
                 {props.content.substring(0, 100) + "..."}

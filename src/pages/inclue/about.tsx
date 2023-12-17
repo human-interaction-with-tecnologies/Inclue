@@ -48,7 +48,9 @@ export default function AboutPage() {
                         <p>Rua Augusto Corrêa - nº 01 – Guamá</p>
                         <p>Belém, Pará, Brasil – CEP: 66075110</p>
                         <br />
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.497609398409!2d-48.458639825915505!3d-1.4742696985118746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x92a48dbe8d60aec1%3A0xfcadc7d40fe3a62d!2sHIT%20-%20Human%20Interaction%20with%20Technologies%20Research%20Group!5e0!3m2!1spt-BR!2sbr!4v1702479132014!5m2!1spt-BR!2sbr" style={{width:"100%", height:"400px"}} loading="lazy" ></iframe>
+                        <iframe title="Google Maps"
+                            style={{width:"100%", height:"400px"}} loading="lazy"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.497609398409!2d-48.458639825915505!3d-1.4742696985118746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x92a48dbe8d60aec1%3A0xfcadc7d40fe3a62d!2sHIT%20-%20Human%20Interaction%20with%20Technologies%20Research%20Group!5e0!3m2!1spt-BR!2sbr!4v1702479132014!5m2!1spt-BR!2sbr" ></iframe>
                     </div>
                 </div>
                 <br />
