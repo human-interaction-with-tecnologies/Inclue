@@ -36,6 +36,8 @@ export default function ConsiderationsPage() {
             className="border border-gray-300 rounded-md px-2 py-1 pr-8"
             value={searchText}
             onChange={handleSearchTextChange}
+            name="BuscarConsideraçõesCampo" // Add name attribute for accessibility
+            aria-label="Buscar" // Add aria-label attribute for accessibility
           />
           <div className="absolute right-2 top-1/2 transform -translate-y-1/2">
             <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
