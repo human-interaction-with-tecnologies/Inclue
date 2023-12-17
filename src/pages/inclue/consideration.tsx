@@ -27,7 +27,9 @@ export default function ConsiderationDetailPage() {
                 <div>
                     <h1 className="text-2xl font-bold mb-4">{consideration?.title}</h1>
                     <div className="bg-primary text-white rounded-lg">
+                        <span className="bg-blue-600 text-white rounded-lg" style={{ backgroundColor: "#2b71e6" }}>
                         {consideration?.category}
+                        </span>
                     </div>
                     <br />
                     <p className="mb-4">{consideration?.content}</p>

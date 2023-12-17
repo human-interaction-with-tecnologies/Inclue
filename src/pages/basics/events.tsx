@@ -1,4 +1,4 @@
-import Event from "@/components/basics/Event";
+import Event from "@/components/basics/Wizard";
 
 export default function PageEvents() {
     return (

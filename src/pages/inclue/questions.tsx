@@ -96,17 +96,28 @@ export default function QuestionsPage() {
                         <br />
                         <h2 className="text-1xl font-bold mb-4">Quantidade de perguntas</h2>
                         <p>Máximo 10 perguntas</p>
+                        <label htmlFor="questionCount">Quantidade de perguntas:</label>
                         <input 
                             type="number"
                             min="1"
                             max="10"
                             value={questionCount}
                             onChange={handleQuestionCountChange}
+                            id="questionCount"
+                            name="Quantidade de perguntas"
                         />
                         <br />
                         <br />
-                        <div className='flex  gap-2'>   
-                            <button className="flex rounded-lg shadow-lg p-2 mb-3 gap-2 items-center bg-primary text-white font-bold" onClick={handleNext}>Próxima</button>
+                        <div className='flex gap-2'>   
+                            <button className="flex rounded-lg 
+                                                shadow-lg p-2 mb-3 gap-2
+                                                items-center font-bold"
+                                    style={{ backgroundColor: "#2b71e6" }} 
+                                    onClick={handleNext}>
+                                       <span className="bg-blue-600 text-white rounded-lg" style={{ backgroundColor: "#2b71e6" }}>
+                                        Próxima
+                                       </span>
+                            </button>
                         </div>
                     </div>
                 )}
@@ -118,17 +129,26 @@ export default function QuestionsPage() {
                             <div className='flex  gap-2'>
                                 <input
                                     type="radio"
+                                    id={actualQuestion.id+''+option.id}
                                     value={option.id}
                                     name={option.text}
                                     checked={optionAuxiliar === option.id}
                                     onChange={(e) => handleOptionSelection(parseInt(e.target.value))}/>
-                                <label>{option.text}</label>
+                                <label htmlFor={actualQuestion.id+''+option.id}>{option.text}</label>
                             </div>
                         ))}
                         <br />
                         <div className='flex  gap-2'>     
-                            <button className="flex rounded-lg shadow-lg p-2 mb-3 gap-2 items-center bg-text-light text-white font-bold" onClick={handlePrevious}>Voltar</button>
-                            <button className="flex rounded-lg shadow-lg p-2 mb-3 gap-2 items-center bg-primary text-white font-bold" onClick={handleNext}>Próxima</button>
+                            <button className="flex rounded-lg shadow-lg p-2 mb-3 gap-2 items-center bg-text-light font-bold" onClick={handlePrevious}>
+                                <span className="bg-blue-600 text-white rounded-lg">
+                                    Voltar
+                                </span>                                 
+                            </button>
+                            <button className="flex rounded-lg shadow-lg p-2 mb-3 gap-2 items-center font-bold" style={{ backgroundColor: "#2b71e6" }} onClick={handleNext}>
+                                <span className="bg-blue-600 text-white rounded-lg" style={{ backgroundColor: "#2b71e6" }} >
+                                    Próxima
+                                </span>
+                            </button>
                         </div>
                     </div>
                 )}
@@ -141,17 +161,26 @@ export default function QuestionsPage() {
                             <div className='flex  gap-2'>
                                 <input
                                     type="radio"
+                                    id={actualQuestion.id+''+option.id}
                                     value={option.id}
                                     name={option.text}
                                     checked={optionAuxiliar === option.id}
                                     onChange={(e) => handleOptionSelection(parseInt(e.target.value))}/>
-                                <label>{option.text}</label>
+                                <label htmlFor={actualQuestion.id+''+option.id}>{option.text}</label>
                             </div>
                         ))}
                         <br />
                         <div className='flex  gap-2'>     
-                        <button className="flex rounded-lg shadow-lg p-2 mb-3 gap-2 items-center bg-text-light text-white font-bold" onClick={handlePrevious}>Voltar</button>
-                            <button className="flex rounded-lg shadow-lg p-2 mb-3 gap-2 items-center bg-primary text-white font-bold" onClick={handleConfirm}>Finalizar</button>
+                        <button className="flex rounded-lg shadow-lg p-2 mb-3 gap-2 items-center bg-text-light  font-bold" onClick={handlePrevious}>
+                            <span className="bg-blue-600 text-white rounded-lg">
+                                Voltar
+                            </span>    
+                        </button>
+                            <button className="flex rounded-lg shadow-lg p-2 mb-3 gap-2 items-center font-bold" style={{ backgroundColor: "#2b71e6" }} onClick={handleConfirm}>
+                                <span className="bg-blue-600 text-white rounded-lg" style={{ backgroundColor: "#2b71e6" }}>
+                                    Finalizar
+                                </span>    
+                            </button>
                         </div>
                     </div>
                 )}
@@ -163,7 +192,11 @@ export default function QuestionsPage() {
                         <p>Fortalecer a inclusão é fornecer oportunidades para que as pessoas tenham acesso pleno em diversos serviços da sociedade.</p>
                         <br />
                         <div className='flex  gap-2'>    
-                           <button className="flex rounded-lg shadow-lg p-2 mb-3 gap-2 items-center bg-primary text-white font-bold" onClick={handleReset}>Reiniciar</button>
+                           <button className="flex rounded-lg shadow-lg p-2 mb-3 gap-2 items-center font-bold" style={{ backgroundColor: "#2b71e6" }} onClick={handleReset}>
+                                <span className="bg-blue-600 text-white rounded-lg" style={{ backgroundColor: "#2b71e6" }}>
+                                    Reiniciar
+                                </span>
+                            </button>
                         </div>
                     </div>
                 )}
