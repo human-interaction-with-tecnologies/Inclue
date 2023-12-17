@@ -114,8 +114,9 @@ const Sidebar = () => {
                     {!toggleCollapse && (
                       <span
                         className={classNames(
-                          "text-md font-medium text-text-light"
+                          "text-md font-medium"
                         )}
+                        style={{ color: "#284B63" }}
                       >
                         {menu.label}
                       </span>
