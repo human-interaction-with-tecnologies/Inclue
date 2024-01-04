@@ -14,6 +14,7 @@ export default function AboutPage() {
                     {
                     dummyTeam.map((person) => (
                         <AboutCard 
+                        key={person.id}
                         id={person.id}
                         name={person.name}
                         description1={person.description}
