@@ -26,8 +26,7 @@ export default function ConsiderationDetailPage() {
                     <h2 className="text-xl font-bold mb-2">
                         {consideration.title}
                     </h2>
-                    <span style={{ backgroundColor: "#005A9F" }}
-                          className="bg-blue-500 text-white px-2 py-1 rounded-md w-fit mb-2">
+                    <span className="bg-blue-500 text-white px-3 py-1 rounded-xl w-fit mb-2 bg-inclue-terciary-color">
                         {consideration.category}
                     </span>
                     <span className="mb-3">{consideration.content}</span>
@@ -42,9 +41,9 @@ export default function ConsiderationDetailPage() {
                     </div>
                     <div>
                         <h3 className="font-bold mb-2">Outras Referências:</h3>
-                        <ul style={{color: "#005A9F"}} className="list-disc ml-6">
+                        <ul className="list-disc ml-6">
                             {consideration.references.map((reference, index) => (
-                                <li key={index}>
+                                <li className="link color-inclue-terciary-color" key={index}>
                                     <a className="underline"
                                        target="_blanck"
                                        href={reference.url}

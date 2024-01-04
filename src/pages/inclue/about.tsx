@@ -46,9 +46,9 @@ export default function AboutPage() {
                 </iframe>
                 
                 <h2 className="text-2xl font-bold mt-8 mb-8">Outras Referências</h2>
-                <ul className="list-disc ml-8" style={{color:"#005A9F"}}>
+                <ul className="list-disc ml-8">
                     {dummyAboutReferences.map((reference) => (
-                        <li key={reference.id} className="mb-2">
+                        <li key={reference.id} className="mb-2 link color-inclue-terciary-color">
                             <a className="underline" target="_blanck" href={reference.url}>
                                 {reference.description}
                             </a>

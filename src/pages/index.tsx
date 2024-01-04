@@ -1,14 +1,21 @@
 import React from "react";
 import Layout from "../components/Layout";
+import Logo from "../components/icons/Logo";
 
 export default function Home() {
   return (
     <Layout title="Início">
-      <div className="bg-white shadow-md rounded-lg py-5 px-5 mt-7">
-        <h2 className="text-lg font-bold mb-8">Bem-vindo ao Inclue</h2>
-        <div className="text-gray-600 grid gap-3 ">
+      <div className="flex flex-col items-center bg-white shadow-md rounded-lg py-5 px-5 mt-7">
+        <h2 className="text-lg font-bold mb-4 w-full">Bem-vindo ao Inclue</h2>
+        <div className="text-gray-600 grid gap-3">
           <span>
             A Inclue é uma plataforma que tem como o objetivo fortalecer a inclusão digital de pessoas que historicamente estiveram distantes das evoluções computacionais, chamados de usuários emergentes, e enfrentam barreiras para acesso a sistemas de pagamentos instantâneos.
+          </span>
+        </div>
+        <Logo className="w-full md:w-3/12" />
+        <div className="text-gray-600 grid gap-3 w-full">
+          <span>
+            Para isso, a Inclue tem como proposta:
           </span>
           <ul className="list-disc ml-6">
             <li><strong>Incluir:</strong> incluir os usuários emergentes aos sistemas interativos</li>

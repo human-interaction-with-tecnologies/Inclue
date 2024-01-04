@@ -2,23 +2,25 @@ import classNames from "classnames";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import React, { useState, useMemo } from "react";
+import variables from "../styles/variables.module.scss";
 
 import {
+    AboutIcon,
     ArticleIcon,
     CollapsIcon,
     HomeIcon,
     LogoIcon,
-    LogoutIcon,
     UsersIcon,
-    QuestionsIcon,
+    QuestionsIcon
   } from "./icons";
+import { randomUUID } from "crypto";
 
 const menuItems = [
-    { id: 1, label: "Inicio", icon: HomeIcon, link: "/" },
-    { id: 2, label: "Considerações de Design", icon: ArticleIcon, link: "/inclue/considerations" },
-    { id: 3, label: "Personas", icon: UsersIcon, link: "/inclue/personas" },
-    { id: 4, label: "Perguntas e Respostas",  icon: ArticleIcon, link: "/inclue/questions" },
-    { id: 5, label: "Sobre", icon: ArticleIcon, link: "/inclue/about" },
+    { id: 1, label: "Inicio", icon: HomeIcon, link: "/", stroke: false },
+    { id: 2, label: "Considerações de Design", icon: ArticleIcon, link: "/inclue/considerations", stroke: false },
+    { id: 3, label: "Personas", icon: UsersIcon, link: "/inclue/personas", stroke: true },
+    { id: 4, label: "Perguntas e Respostas",  icon: QuestionsIcon, link: "/inclue/questions", stroke: false },
+    { id: 5, label: "Sobre", icon: AboutIcon, link: "/inclue/about", stroke: false },
 ];
 
 
@@ -42,7 +44,7 @@ const Sidebar = () => {
   );
 
   const wrapperClasses = classNames(
-    "h-screen px-4 pt-8 pb-4 bg-light flex justify-between flex-col",
+    "h-screen px-4 pt-8 pb-4 flex justify-between flex-col",
     {
       ["w-80"]: !toggleCollapse,
       ["w-20"]: toggleCollapse,
@@ -50,7 +52,7 @@ const Sidebar = () => {
   );
 
   const collapseIconClasses = classNames(
-    "p-4 rounded bg-light-lighter absolute right-0",
+    "p-4 rounded bg-inclue-white-color absolute right-0",
     {
       "rotate-180": toggleCollapse,
     }
@@ -58,9 +60,9 @@ const Sidebar = () => {
 
   const getNavItemClasses = (menu) => {
     return classNames(
-      "flex items-center cursor-pointer hover:bg-light-lighter rounded w-full overflow-hidden whitespace-nowrap",
+      `sidebar-items flex items-center cursor-pointer rounded w-full overflow-hidden whitespace-nowrap`,
       {
-        ["bg-light-lighter"]: (activeMenu.id === menu.id),
+        ["active"]: (activeMenu.id === menu.id),
       }
     );
   };
@@ -78,16 +80,17 @@ const Sidebar = () => {
       className={wrapperClasses}
       onMouseEnter={onMouseOver}
       onMouseLeave={onMouseOver}
-      style={{ transition: "width 300ms cubic-bezier(0.2, 0, 0, 1) 0s" }}
+      style={{ backgroundColor: variables.primaryColor, transition: "width 300ms cubic-bezier(0.2, 0, 0, 1) 0s" }}
     >
       <div className="flex flex-col">
         <div className="flex items-center justify-between relative">
-          <div className="flex items-center pl-1 gap-4">
+          <div className="flex items-center gap-4">
             <LogoIcon />
             <span
-              className={classNames("mt-2 text-lg font-medium text-text", {
+              className={classNames("mt-2 text-lg font-medium", {
                 hidden: toggleCollapse,
               })}
+              style={{ color: variables.whiteColor }}
             >
               Inclue
             </span>
@@ -96,7 +99,7 @@ const Sidebar = () => {
             <button
               className={collapseIconClasses}
               onClick={handleSidebarToggle}>
-              <CollapsIcon />
+              <CollapsIcon className="fill-inclue-primary-color" />
             </button>
           )}
         </div>
@@ -109,12 +112,18 @@ const Sidebar = () => {
                 <Link href={{pathname: menu.link}} >
                   <div className="flex py-4 px-3 items-center w-full h-full">
                     <div style={{ width: "2.5rem" }}>
-                      <Icon />
+                      {
+                        menu.stroke ? (
+                          <Icon className="icon-stroke" />
+                        ) : (
+                          <Icon className="icon-fill" />
+                        )
+                      }
                     </div>
                     {!toggleCollapse && (
                       <span
                         className={classNames(
-                          "text-md font-medium text-text-light"
+                          "text-md font-medium"
                         )}
                       >
                         {menu.label}

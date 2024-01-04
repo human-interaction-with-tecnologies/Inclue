@@ -1,6 +1,7 @@
 import Layout from "@/components/Layout";
 import { useEffect, useState } from "react";
 import { dummyQuestions } from "../../db/dummyQuestions";
+import variables from "@/styles/variables.module.scss";
 
 export default function QuestionsPage() {
 
@@ -74,20 +75,22 @@ export default function QuestionsPage() {
                                         min={1}
                                         max={questionsMax} />
                             </label>
-                            <h3 className="text-md font-bold mb-1">Cenários</h3>
+                            <h3 className="text-md font-bold mb-2">Cenários</h3>
                             <div className="flex flex-col">
-                                <label className="mb-2">
+                                <label className="mb-3 checkbox-container">
                                     <input className="mr-2" type="checkbox" name="category" checked={setting.categories.includes("Category1")} value="Category1" onChange={() => handleCategoryClick("Category1")} />
+                                    <span className="checkmark"></span>
                                     Category 1
                                 </label>
-                                <label>
+                                <label className="checkbox-container">
                                     <input className="mr-2" type="checkbox" name="category" checked={setting.categories.includes("Category2")} value="Category2" onChange={() => handleCategoryClick("Category2")} />
+                                    <span className="checkmark"></span>
                                     Category 2
                                 </label>
                             </div>
                         </div>
                         <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded self-end w-screen md:w-32 mt-5 mb-1"
-                                style={{backgroundColor:"#005A9F"}}
+                                style={{backgroundColor:variables.terciaryColor}}
                                 onClick={() => {
                                     if(setting.categories.length == 0) {
                                         window.alert("Selecione uma categoria de perguntas");
@@ -133,7 +136,7 @@ export default function QuestionsPage() {
                             </ul>
                         </div>
                         <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded self-end w-screen md:w-32 mt-5 mb-1"
-                                style={{backgroundColor:"#005A9F"}}
+                                style={{backgroundColor:variables.terciaryColor}}
                                 onClick={(e) => {
                                     if(answersIdInMoment == -1) {
                                         window.alert("Selecione uma opção");
@@ -158,7 +161,7 @@ export default function QuestionsPage() {
                             <span className="mb-3">Agradecemos o tempo dedicado para entender as considerações de design e avaliação de sistemas de pagamento e usuários emergentes.</span>
                             <span className="mb-3">Fortalecer a inclusão é fornecer oportunidades para que as pessoas tenham acesso pleno em diversos serviços da sociedade.</span>
                         </div>
-                        <button style={{backgroundColor:"#005A9F"}} onClick={() => setStep(0)} className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded self-end w-screen md:w-32 mt-5 mb-1">
+                        <button style={{backgroundColor:variables.terciaryColor}} onClick={() => setStep(0)} className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded self-end w-screen md:w-32 mt-5 mb-1">
                             Refazer
                         </button>
                     </div>
