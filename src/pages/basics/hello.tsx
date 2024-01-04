@@ -1,5 +1,4 @@
 import Primary from "@/components/basics/ConsiderationCard";
-import { Head } from "next/document";
 
 import Image from "next/image";
 
