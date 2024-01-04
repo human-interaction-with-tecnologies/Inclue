@@ -1,4 +1,4 @@
-export default function QuestionsIcon({ fill = "#6C7281", ...rest }) {
+export default function QuestionsIcon({ ...rest }) {
   return (
     <svg
       width={24}
@@ -8,11 +8,8 @@ export default function QuestionsIcon({ fill = "#6C7281", ...rest }) {
       xmlns="http://www.w3.org/2000/svg"
       {...rest}
     >
-      <path d="M4 8H2v12a2 2 0 002 2h12v-2H4V8z" fill={fill} />
-      <path
-        d="M20 2H8a2 2 0 00-2 2v12a2 2 0 002 2h12a2 2 0 002-2V4a2 2 0 00-2-2zm-9 12V6l7 4-7 4z"
-        fill={fill}
-      />
+      <path d="M3.5 3.75a.25.25 0 0 1 .25-.25h13.5a.25.25 0 0 1 .25.25v10a.75.75 0 0 0 1.5 0v-10A1.75 1.75 0 0 0 17.25 2H3.75A1.75 1.75 0 0 0 2 3.75v16.5c0 .966.784 1.75 1.75 1.75h7a.75.75 0 0 0 0-1.5h-7a.25.25 0 0 1-.25-.25z"/>
+      <path d="M6.25 7a.75.75 0 0 0 0 1.5h8.5a.75.75 0 0 0 0-1.5zm-.75 4.75a.75.75 0 0 1 .75-.75h4.5a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1-.75-.75m16.28 4.53a.75.75 0 1 0-1.06-1.06l-4.97 4.97l-1.97-1.97a.75.75 0 1 0-1.06 1.06l2.5 2.5a.75.75 0 0 0 1.06 0z"/>
     </svg>
   );
 }
