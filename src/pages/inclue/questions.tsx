@@ -5,52 +5,52 @@ import variables from "@/styles/variables.module.scss";
 
 export default function QuestionsPage() {
 
-    const [questionsMax, setQuestionsMax] = useState(10);
-    const [step, setStep] = useState(0);
-    const [setting, setSetting] = useState({quantity: 1, categories: ["Category1", "Category2"], questions: [] as any, answers: [] as any});
-    const [answersIdInMoment, setAnswersIdInMoment] = useState(-1);
-    const [correctNumber, setCorrectNumber] = useState(0);	
+    // const [questionsMax, setQuestionsMax] = useState(10);
+    // const [step, setStep] = useState(0);
+    // const [setting, setSetting] = useState({quantity: 1, categories: ["Category1", "Category2"], questions: [] as any, answers: [] as any});
+    // const [answersIdInMoment, setAnswersIdInMoment] = useState(-1);
+    // const [correctNumber, setCorrectNumber] = useState(0);	
 
-    useEffect(() => {
-        if(step == 0) {
-            setSetting({quantity: 1, categories: ["Category1", "Category2"], questions: [] as any, answers: [] as any});
-            setAnswersIdInMoment(-1);
-            setCorrectNumber(0);
-        }
+    // useEffect(() => {
+    //     if(step == 0) {
+    //         setSetting({quantity: 1, categories: ["Category1", "Category2"], questions: [] as any, answers: [] as any});
+    //         setAnswersIdInMoment(-1);
+    //         setCorrectNumber(0);
+    //     }
 
-        if(step > setting.quantity) {
-            let count = 0;
-            setting.answers.map((answer: any) => {
-                if(answer.option.value == true) {
-                    count++;
-               }
-            });
-            setCorrectNumber(count);
-        }
-    }, [step]);
+    //     if(step > setting.quantity) {
+    //         let count = 0;
+    //         setting.answers.map((answer: any) => {
+    //             if(answer.option.value == true) {
+    //                 count++;
+    //            }
+    //         });
+    //         setCorrectNumber(count);
+    //     }
+    // }, [step]);
 
-    const handleCategoryClick = (category: string) => {
-        const updatedCategories = setting.categories.includes(category)
-            ? setting.categories.filter((cat) => cat !== category)
-            : [...setting.categories, category];
-        setSetting({ ...setting, categories: updatedCategories });
-    };
+    // const handleCategoryClick = (category: string) => {
+    //     const updatedCategories = setting.categories.includes(category)
+    //         ? setting.categories.filter((cat) => cat !== category)
+    //         : [...setting.categories, category];
+    //     setSetting({ ...setting, categories: updatedCategories });
+    // };
 
-    const preProssegingQuestions = () => {
-        let questionsSelected = new Array;
-        while (questionsSelected.length != setting.quantity) {
-            let randomCategory = setting.categories[Math.floor(Math.random() * setting.categories.length)];
-            let randomQuestion = dummyQuestions.filter((question) => question.category === randomCategory)[Math.floor(Math.random() * dummyQuestions.filter((question) => question.category === randomCategory).length)];
-            console.log(randomQuestion);
-            if (!questionsSelected.includes(randomQuestion)) {
-                questionsSelected.push(randomQuestion);
-            }
-        }
-        setSetting({ ...setting, questions: questionsSelected });
-    };
+    // const preProssegingQuestions = () => {
+    //     let questionsSelected = new Array;
+    //     while (questionsSelected.length != setting.quantity) {
+    //         let randomCategory = setting.categories[Math.floor(Math.random() * setting.categories.length)];
+    //         let randomQuestion = dummyQuestions.filter((question) => question.category === randomCategory)[Math.floor(Math.random() * dummyQuestions.filter((question) => question.category === randomCategory).length)];
+    //         console.log(randomQuestion);
+    //         if (!questionsSelected.includes(randomQuestion)) {
+    //             questionsSelected.push(randomQuestion);
+    //         }
+    //     }
+    //     setSetting({ ...setting, questions: questionsSelected });
+    // };
 
     return (
-        <Layout title="Perguntas e Respostas">
+        /*<Layout title="Perguntas e Respostas">
             {step > 0 && step <= setting.quantity && (
             <a className="underline flex items-center gap-1 mt-4" onClick={() => setStep(step-1)}>
                 <svg width="18" height="15" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -167,6 +167,6 @@ export default function QuestionsPage() {
                     </div>
                 )}
             </div>
-        </Layout>
+        </Layout>*/<></>
     );
 }

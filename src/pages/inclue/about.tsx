@@ -7,7 +7,7 @@ import { dummyAboutReferences } from "../../db/dummyAboutReferences";
 
 export default function AboutPage() {
     return (
-        <Layout title="Sobre">
+        /*<Layout title="Sobre">
             <div className="bg-white rounded-lg shadow-lg p-6 mt-7">
                 <h2 className="text-2xl font-bold mb-8">Equipe</h2>
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-10 mt-5 mb-5">
@@ -56,6 +56,6 @@ export default function AboutPage() {
                     ))}
                 </ul>
             </div>
-        </Layout>
+        </Layout>*/<></>
     )
 }
