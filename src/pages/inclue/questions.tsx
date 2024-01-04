@@ -5,7 +5,7 @@ import variables from "@/styles/variables.module.scss";
 
 export default function QuestionsPage() {
 
-    const [questionsMax, setQuestionsMax] = useState(10);
+    /*const [questionsMax, setQuestionsMax] = useState(10);
     const [step, setStep] = useState(0);
     const [setting, setSetting] = useState({quantity: 1, categories: ["Category1", "Category2"], questions: [] as any, answers: [] as any});
     const [answersIdInMoment, setAnswersIdInMoment] = useState(-1);
@@ -47,10 +47,10 @@ export default function QuestionsPage() {
             }
         }
         setSetting({ ...setting, questions: questionsSelected });
-    };
+    };*/
 
     return (
-        <Layout title="Perguntas e Respostas">
+        /*<Layout title="Perguntas e Respostas">
             {step > 0 && step <= setting.quantity && (
             <a className="underline flex items-center gap-1 mt-4" onClick={() => setStep(step-1)}>
                 <svg width="18" height="15" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -167,6 +167,6 @@ export default function QuestionsPage() {
                     </div>
                 )}
             </div>
-        </Layout>
+        </Layout>*/<></>
     );
 }
