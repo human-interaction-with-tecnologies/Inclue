@@ -35,7 +35,7 @@ export default function ConsiderationDetailPage() {
                         <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-3">
                             {consideration.images.map((image, index) => (
                                 <li key={index}>
-                                    <Image src={image.url} alt={image.text} width={500} height={500} />
+                                    {/* <Image src={image.url} alt={image.text} width={500} height={500} /> */}
                                 </li>
                             ))}
                         </ul>
