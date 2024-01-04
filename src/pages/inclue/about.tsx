@@ -28,7 +28,8 @@ export default function AboutPage() {
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-10 mt-5 mb-5">
                     {
                     dummyGroup.map((group) => (
-                        <AboutCard 
+                        <AboutCard
+                        key={group.id}
                         id={group.id}
                         name={group.name}
                         description1={group.description}
