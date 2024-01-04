@@ -6,7 +6,7 @@ import { dummyGroup } from "../../db/dummyGroup";
 import { dummyAboutReferences } from "../../db/dummyAboutReferences";
 
 export default function AboutPage() {
-    return (/*
+    return (
         <Layout title="Sobre">
             <div className="bg-white rounded-lg shadow-lg p-6 mt-7">
                 <h2 className="text-2xl font-bold mb-8">Equipe</h2>
@@ -57,5 +57,5 @@ export default function AboutPage() {
                 </ul>
             </div>
         </Layout>
-    */<></>)
+    )
 }
