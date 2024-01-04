@@ -108,7 +108,7 @@ const Sidebar = () => {
           {menuItems.map(({ icon: Icon, ...menu }) => {
             const classes = getNavItemClasses(menu);
             return (
-              <div className={classes}>
+              <div key={menu.id} className={classes}>
                 <Link href={{pathname: menu.link}} >
                   <div className="flex py-4 px-3 items-center w-full h-full">
                     <div style={{ width: "2.5rem" }}>
