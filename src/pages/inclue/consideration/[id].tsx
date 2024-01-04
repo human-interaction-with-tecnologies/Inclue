@@ -3,6 +3,7 @@ import Link from "next/link";
 import { dummyConsiderations } from "../../../db/dummyConsiderations";
 import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
+import Image from 'next/image';
 
 export default function ConsiderationDetailPage() {
     const router = useRouter();
@@ -34,7 +35,7 @@ export default function ConsiderationDetailPage() {
                         <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-3">
                             {consideration.images.map((image, index) => (
                                 <li key={index}>
-                                    <img src={image.url} alt={image.text} />
+                                    <Image src={image.url} alt={image.text} width={500} height={500} />
                                 </li>
                             ))}
                         </ul>
