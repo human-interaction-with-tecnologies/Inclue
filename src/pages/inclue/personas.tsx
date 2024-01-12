@@ -4,7 +4,7 @@ import { dummyPersonas } from "../../db/dummyPersonas";
 
 export default function PersonasPage() {
     return (
-        <Layout title="Consideração de Design e Avaliação">
+        <Layout title="Personas">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-7 mb-5">
                 {dummyPersonas.map((personas) => (
                     <PersonaCard 
