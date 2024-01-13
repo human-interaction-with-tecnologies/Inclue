@@ -41,6 +41,5 @@ export const dummyPersonas = [
     description: "Karina, aos 43 anos, é sacoleira. No mês passado, durante as aulas da Escola de Jovens e Adultos, ela recebeu instruções sobre empreendedorismo e educação financeira. Desse modo, tem buscado alternativas para inovar em suas vendas diárias. Com a ascensão do Pix, ela abriu uma conta e está empenhada em aprender sobre o aplicativo. Contudo, Karina afirma que tem pouca experiência com smartphones, com aproximadamente um ano de contato. Logo, abriu uma conta bancária mas sente que o aplicativo não fornece dicas de uso e, assim, enfrenta dificuldades para inserir dados em campos de texto e compreender as ilustrações.",
     characteristics: ["Vendedora", "43 anos", "Estudante da EJA", "Pouca experiência com smartphones", "Dificuldades de compreensão com campos de texto ilustrações"],
     image: "/images/personas/persona-6.jpg"
-  },
-  // Add more personas here...
+  }
 ];
