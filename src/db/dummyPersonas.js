@@ -4,7 +4,7 @@ export const dummyPersonas = [
     id: 1,
     name: "Maria Nazaré",
     description: "Uma empreendedora de 64 anos, residente da ilha do Sabiá, que trabalha na extração de açaí com seus famíliares. Recentemente, ela recebeu um smartphone de presente de Natal de seu irmão, seu primeiro dispositivo com tal tecnologia. Ela está ansiosa para aprender a usar o Pix, para facilitar os pagamentos dos clientes na feira do Ver-o-Peso. Contudo, ela indicou que tem receios de utilizar o aplicativo, devido não compreender como se utilizar as funções de teclado, botões e outros recursos tradicionais do smartphone.",
-    characteristics: ["Friendly", "Helpful", "Creative"],
+    characteristics: ["64 anos", "Extrativista de acaí", "Usuária novata", "Dificuldades com recursos tradicionais de smartphones"],
     image: "/images/personas/persona-1.jpg"
   },
   {
@@ -39,7 +39,7 @@ export const dummyPersonas = [
     id: 6,
     name: "Karina Oliveira",
     description: "Karina, aos 43 anos, é sacoleira. No mês passado, durante as aulas da Escola de Jovens e Adultos, ela recebeu instruções sobre empreendedorismo e educação financeira. Desse modo, tem buscado alternativas para inovar em suas vendas diárias. Com a ascensão do Pix, ela abriu uma conta e está empenhada em aprender sobre o aplicativo. Contudo, Karina afirma que tem pouca experiência com smartphones, com aproximadamente um ano de contato. Logo, abriu uma conta bancária mas sente que o aplicativo não fornece dicas de uso e, assim, enfrenta dificuldades para inserir dados em campos de texto e compreender as ilustrações.",
-    characteristics: ["Vendedora", "43 anos", "Estudante da EJA", "Pouca experiência com smartphones", "Dificuldades de compreensão com campos de texto ilustrações"],
+    characteristics: ["Vendedora", "43 anos", "Estudante da EJA", "Pouca experiência com smartphones", "Dificuldades de compreensão com campos de texto e ilustrações"],
     image: "/images/personas/persona-6.jpg"
   }
 ];
