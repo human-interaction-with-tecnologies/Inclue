@@ -2,7 +2,7 @@
 export const dummyAboutReferences= [
   {
     id: 1,
-    description: "Dissertação de Mestrado",
+    description: "Dissertação de Mestrado (PPGCC-UFPA)",
     url: "https://drive.google.com/file/d/1UHFKZ2MpBkB5ZPU0vhdOvePPBYeldkcm/view"
   },
   {
