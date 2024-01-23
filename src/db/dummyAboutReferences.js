@@ -7,18 +7,17 @@ export const dummyAboutReferences= [
   },
   {
     id: 2,
-    description: "Trabalho de Conclusão de Curso",
-    url: "https://www.google.com/"
+    description: "Artigo Apresentado na Trilha de Pesquisa (IHC 2023)",
+    url: "https://doi.org/10.1145/3638067.3638090"
   },
   {
     id: 3,
-    description: "Prêmio Junia Coutinho Anacleto de Teses e Dissertações",
-    url: "https://www.google.com/"
+    description: "Artigo Apresentado na Trilha de Ideias Inovadoras e Resultados Emergentes (IHC 2023)",
+    url: "https://doi.org/10.1145/3638067.3638127"
   },
   {
     id: 4,
-    description: "Artigo  publicado no IHC 2023",
-    url: "https://www.google.com/"
-  },
-  // Add more objects as needed
+    description: "Artigo do Prêmio Junia Coutinho Anacleto (IHC 2023) - Categoria Mestrado",
+    url: "https://doi.org/10.1145/3638067.3638107"
+  }
 ];
