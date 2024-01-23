@@ -3,7 +3,7 @@ export const dummyAboutReferences= [
   {
     id: 1,
     description: "Dissertação de Mestrado",
-    url: "https://www.google.com/"
+    url: "https://drive.google.com/file/d/1UHFKZ2MpBkB5ZPU0vhdOvePPBYeldkcm/view"
   },
   {
     id: 2,
@@ -12,7 +12,7 @@ export const dummyAboutReferences= [
   },
   {
     id: 3,
-    description: "Prêmio Juniia Coutinho Anacleto de Teses e Dissertações",
+    description: "Prêmio Junia Coutinho Anacleto de Teses e Dissertações",
     url: "https://www.google.com/"
   },
   {

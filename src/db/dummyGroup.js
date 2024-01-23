@@ -2,9 +2,9 @@
 export const dummyGroup = [
   {
     id: 1,
-    name: "Group 1",
-    description: "This is group 1",
-    email: "group1@example.com",
+    name: "HIT",
+    description: "Human Interaction with Technologies Research Group",
+    email: "Universidade Federal do Pará",
     image: "/images/about/group/hit.png"
   }
   // Add more objects as needed
