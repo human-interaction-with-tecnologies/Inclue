@@ -1,3 +1,8 @@
 export const dummyCategories = [
-    "Technology", "Science", "Sports"
+    "Sports",
+    "Thechnology",
+    "Theatro",
+    "Music",
+    "Video Games",
+    "Nature"
 ];

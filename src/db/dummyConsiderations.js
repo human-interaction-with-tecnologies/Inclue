@@ -2,7 +2,11 @@ export const dummyConsiderations = [
     {
         id: 1,
         title: "First Post",
-        category: "Technology",
+        category: [
+            "Sports",
+            "Thechnology",
+            "Theatro"
+        ],
         content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         images: [
             { id: 1, url: "/images/considerations/consideration.png", text: "Image 1" },
@@ -25,7 +29,11 @@ export const dummyConsiderations = [
     {
         id: 2,
         title: "Second Post",
-        category: "Science",
+        category: [
+            "Music",
+            "Thechnology",
+            "Theatro"
+        ],
         content: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem.",
         images: [
             { id: 1, url: "/images/considerations/consideration.png", text: "Image 1" },
@@ -47,7 +55,11 @@ export const dummyConsiderations = [
     {
         id: 3,
         title: "Third Post",
-        category: "Sports",
+        category: [
+            "Music",
+            "Video Games",
+            "Nature"
+        ],
         content: "At vero eos et accusamus et iusto odio dignissimos ducimus.",
         images: [
             { id: 1, url: "/images/considerations/consideration.png", text: "Image 1" },

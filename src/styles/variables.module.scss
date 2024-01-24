@@ -18,6 +18,14 @@ $white-color: #FFFFFF;
     fill: $primary-color;
 }
 
+.bg-inclue-primary-color {
+    background-color: $primary-color;
+}
+
+.bg-inclue-secondary-color {
+    background-color: $secondary-color;
+}
+
 .bg-inclue-white-color {
     background-color: $white-color;
 }

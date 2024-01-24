@@ -3,16 +3,24 @@ import { considerationsByCategory } from "../../db/considerationsByCategory";
 import { dummyCategories } from "../../db/dummyCategories";
 import ConsiderationCard from "@/components/basics/ConsiderationCard";
 
-import { useState } from "react";
+import {useEffect, useState } from "react";
 
 
 export default function ConsiderationsPage() {
-  const [selectedCategory, setSelectedCategory] = useState("");
+  const [selectedCategory, setSelectedCategory] = useState<Array<string>>([]);
   const [searchText, setSearchText] = useState("");
 
   const handleCategoryClick = (category: string) => {
-    setSelectedCategory(category);
+    if (selectedCategory?.includes(category)) {
+      setSelectedCategory(selectedCategory.filter((item) => item !== category));
+      return;
+    }
+    setSelectedCategory([...(selectedCategory || []), category]);
   };
+
+  useEffect(() => {
+    console.log(selectedCategory);
+  }, [selectedCategory]);
 
   const handleSearchTextChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setSearchText(event.target.value);
@@ -20,10 +28,11 @@ export default function ConsiderationsPage() {
 
   const filteredConsiderations = considerationsByCategory().filter(
     (consideration) =>
-      (selectedCategory === "" || consideration.category === selectedCategory) &&
+      (selectedCategory?.length == 0 || selectedCategory?.every((item) => consideration.category.includes(item))) &&
       (searchText === "" ||
         consideration.title.toLowerCase().includes(searchText.toLowerCase()) ||
         consideration.content.toLowerCase().includes(searchText.toLowerCase()))
+  
   );
 
   return (
@@ -47,20 +56,17 @@ export default function ConsiderationsPage() {
       <div className="flex gap-3 mt-5 mb-8">
         {dummyCategories.map((category) => (
           <button
-            className="bg-blue-500 shadow-md text-white px-3 py-1 rounded-xl bg-inclue-terciary-color"
+            className={`bg-blue-500 shadow-md text-white px-3 py-1 rounded-xl ${
+              selectedCategory?.includes(category)
+                ? "bg-inclue-terciary-color"
+                : "bg-inclue-primary-color"
+            }`}
             key={category}
             onClick={() => handleCategoryClick(category)}
           >
             {category}
           </button>
         ))}
-        <button
-            className="bg-blue-500 shadow-md text-white px-3 py-1 rounded-xl bg-inclue-terciary-color"
-            key={"Todos"}
-            onClick={() => setSelectedCategory("")}
-          >
-            Todos
-          </button>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
         {filteredConsiderations.map((consideration) => {
