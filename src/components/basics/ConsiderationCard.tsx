@@ -16,7 +16,7 @@ export default function ConsiderationCard(props: ConsiderationCardProps) {
                 <div className="flex flex-wrap flex-1 gap-1.5">
                     {
                         props.category.map(
-                            (item) => (<span className="bg-blue-500 text-white px-3 py-1 rounded-xl bg-inclue-terciary-color">{item}</span>)
+                            (item) => (<span key={crypto.randomUUID()} className="bg-blue-500 text-white px-3 py-1 rounded-xl bg-inclue-terciary-color">{item}</span>)
                         )
                     }
                 </div>
