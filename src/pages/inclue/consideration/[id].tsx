@@ -27,9 +27,13 @@ export default function ConsiderationDetailPage() {
                     <h2 className="text-xl font-bold mb-2">
                         {consideration.title}
                     </h2>
-                    <span className="bg-blue-500 text-white px-3 py-1 rounded-xl w-fit mb-2 bg-inclue-terciary-color">
-                        {consideration.category}
-                    </span>
+                    <div className="flex flex-wrap flex-1 gap-1.5">
+                        {
+                            consideration.category.map(
+                                (item) => (<span key={crypto.randomUUID()} className="bg-blue-500 text-white px-3 py-1 rounded-xl bg-inclue-terciary-color">{item}</span>)
+                            )
+                        }
+                    </div>
                     <span className="mb-3">{consideration.content}</span>
                     <div className="mb-4">
                         <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-3">
