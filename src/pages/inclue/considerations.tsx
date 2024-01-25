@@ -2,6 +2,7 @@ import Layout from "@/components/Layout";
 import { considerationsByCategory } from "../../db/considerationsByCategory";
 import { dummyCategories } from "../../db/dummyCategories";
 import ConsiderationCard from "@/components/basics/ConsiderationCard";
+import Accordion from "@/components/basics/Accordion";
 
 import {useEffect, useState } from "react";
 
@@ -53,7 +54,7 @@ export default function ConsiderationsPage() {
           </div>
         </div>
       </div>
-      <div className="flex gap-3 mt-5 mb-8">
+      <div className="flex gap-3 mb-2 mt-5">
         {dummyCategories.map((category) => (
           <button
             className={`bg-blue-500 shadow-md text-white px-3 py-1 rounded-xl ${
@@ -68,7 +69,25 @@ export default function ConsiderationsPage() {
           </button>
         ))}
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+      <Accordion
+        title="Informações sobre a categoria"
+        answer={`
+        <div class="flex flex-col flex-wrap gap-y-1.5">
+          <span>
+            <strong>Entrada de dados:</strong> elementos de interação nos quais há a necessidade de ação direta dos usuários.
+          </span>
+          <span>
+            <strong>Saída de dados:</strong> elementos de interação que são disponibilizados aos usuários sem interação direta.
+          </span>
+          <span>
+            <strong>Áudio:</strong> elementos de interação nos quais os usuários são apoiados com ações de voz.
+          </span>
+          <span>
+            <strong>Visual:</strong> elementos de interação nos quais são apresentados elementos visíveis aos usuários.
+          </span>
+        </div>`}
+      />
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 mt-4 gap-4">
         {filteredConsiderations.map((consideration) => {
           return (
             <ConsiderationCard
