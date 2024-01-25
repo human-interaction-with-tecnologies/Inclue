@@ -74,16 +74,16 @@ export default function ConsiderationsPage() {
         answer={`
         <div class="flex flex-col flex-wrap gap-y-1.5">
           <span>
-            <strong>Entrada de dados:</strong> elementos de interação nos quais há a necessidade de ação direta dos usuários.
+            <strong>Entrada de dados:</strong> elementos de interação que demandam ação direta dos usuários.
           </span>
           <span>
-            <strong>Saída de dados:</strong> elementos de interação que são disponibilizados aos usuários sem interação direta.
+            <strong>Saída de dados:</strong> elementos da interface apresentados aos usuários.
           </span>
           <span>
-            <strong>Áudio:</strong> elementos de interação nos quais os usuários são apoiados com ações de voz.
+            <strong>Áudio:</strong> elementos da interface com recursos de voz que apoiam os usuários.
           </span>
           <span>
-            <strong>Visual:</strong> elementos de interação nos quais são disponibilizados recursos visíveis aos usuários.
+            <strong>Visual:</strong> elementos visuais da interface disponibilizados aos usuários.
           </span>
         </div>`}
       />
