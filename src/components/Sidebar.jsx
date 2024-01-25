@@ -93,7 +93,7 @@ const Sidebar = () => {
       <div className="flex flex-col">
         <div className="flex items-center justify-between relative">
           <div className="flex items-center gap-4">
-            <LogoIcon width={isMobile ? "3.2em" : toggleCollapse ? "3.2em" : "5em" } height={isMobile ? "3.2em" : toggleCollapse ? "3.2em" : "5em" } />
+            <LogoIcon  width={ toggleCollapse ? "3.25em" : "5em" } height={ toggleCollapse ? "3.25em" : "5em" } />
             <span
               className={classNames("mt-2 text-lg font-medium", {
                 hidden: toggleCollapse,
