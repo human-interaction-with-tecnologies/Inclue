@@ -54,7 +54,7 @@ export default function ConsiderationsPage() {
           </div>
         </div>
       </div>
-      <div className="flex gap-3 mb-2 mt-5">
+      <div className="flex flex-wrap gap-3 mb-2 mt-5">
         {dummyCategories.map((category) => (
           <button
             className={`bg-blue-500 shadow-md text-white px-3 py-1 rounded-xl ${
