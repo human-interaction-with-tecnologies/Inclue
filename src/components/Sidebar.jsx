@@ -1,8 +1,9 @@
 import classNames from "classnames";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import React, { useState, useMemo } from "react";
+import React, { useState, useMemo, useEffect } from "react";
 import variables from "../styles/variables.module.scss";
+import {isMobile} from 'react-device-detect';
 
 import {
     AboutIcon,
@@ -24,7 +25,7 @@ const menuItems = [
 ];
 
 
-// Para implmenetar uma página auxiliar, voc~e deve criar aqui o item auxiliar com id do pai e a rota do cpage
+// Para implemetar uma página auxiliar, você deve criar aqui o item auxiliar com id do pai e a rota do page
 const subMenuItem = [
   { id: 2, label: "Considerações de Design", icon: ArticleIcon, link: "/inclue/consideration/[id]" }
 ];
@@ -42,6 +43,10 @@ const Sidebar = () => {
     [router.pathname]
     
   );
+
+  useEffect(() => {
+    isMobile && setToggleCollapse(true);
+  }, []);
 
   const wrapperClasses = classNames(
     "h-screen px-4 pt-8 pb-4 flex justify-between flex-col",
@@ -63,6 +68,9 @@ const Sidebar = () => {
       `sidebar-items flex items-center cursor-pointer rounded w-full overflow-hidden whitespace-nowrap`,
       {
         ["active"]: (activeMenu.id === menu.id),
+      },
+      {
+        ["justify-center"]: toggleCollapse,
       }
     );
   };
@@ -85,7 +93,7 @@ const Sidebar = () => {
       <div className="flex flex-col">
         <div className="flex items-center justify-between relative">
           <div className="flex items-center gap-4">
-            <LogoIcon />
+            <LogoIcon width={isMobile ? "3.2em" : toggleCollapse ? "3.2em" : "5em" } height={isMobile ? "3.2em" : toggleCollapse ? "3.2em" : "5em" } />
             <span
               className={classNames("mt-2 text-lg font-medium", {
                 hidden: toggleCollapse,
@@ -111,7 +119,7 @@ const Sidebar = () => {
               <div key={menu.id} className={classes}>
                 <Link href={{pathname: menu.link}} >
                   <div className="flex py-4 px-3 items-center w-full h-full">
-                    <div style={{ width: "2.5rem" }}>
+                    <div style={{ width: toggleCollapse ? "auto" : "2.5rem" }}>
                       {
                         menu.stroke ? (
                           <Icon className="icon-stroke" />

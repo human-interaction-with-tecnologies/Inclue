@@ -1,4 +1,4 @@
-export default function LogoNegative({ ...rest }) {
+export default function LogoNegative({ ...props }) {
   return (
     <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -8,9 +8,7 @@ export default function LogoNegative({ ...rest }) {
       enableBackground: "new 0 0 497 517.9",
     }}
     viewBox="0 0 497 517.9"
-    width="3.25em"
-    height="3.25em"
-    {...rest}
+    {...props}
   >
     <style>
       {
