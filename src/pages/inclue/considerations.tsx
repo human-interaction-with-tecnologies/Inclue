@@ -70,7 +70,7 @@ export default function ConsiderationsPage() {
         ))}
       </div>
       <Accordion
-        title="Informações sobre a categoria"
+        title="Informações sobre as categorias"
         answer={`
         <div class="flex flex-col flex-wrap gap-y-1.5">
           <span>
@@ -83,7 +83,7 @@ export default function ConsiderationsPage() {
             <strong>Áudio:</strong> elementos de interação nos quais os usuários são apoiados com ações de voz.
           </span>
           <span>
-            <strong>Visual:</strong> elementos de interação nos quais são apresentados elementos visíveis aos usuários.
+            <strong>Visual:</strong> elementos de interação nos quais são disponibilizados recursos visíveis aos usuários.
           </span>
         </div>`}
       />
