@@ -89,7 +89,7 @@ export default function QuestionsPage() {
                                 </label>
                             </div>
                         </div>
-                        <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded self-end w-screen md:w-32 mt-5 mb-1"
+                        <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded self-end w-full md:w-32 mt-5 mb-1"
                                 style={{backgroundColor:variables.terciaryColor}}
                                 onClick={() => {
                                     if(setting.categories.length == 0) {
@@ -135,7 +135,7 @@ export default function QuestionsPage() {
                                 ) )}
                             </ul>
                         </div>
-                        <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded self-end w-screen md:w-32 mt-5 mb-1"
+                        <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded self-end w-full md:w-32 mt-5 mb-1"
                                 style={{backgroundColor:variables.terciaryColor}}
                                 onClick={(e) => {
                                     if(answersIdInMoment == -1) {
@@ -161,7 +161,7 @@ export default function QuestionsPage() {
                             <span className="mb-3">Agradecemos o tempo dedicado para entender as considerações de design e avaliação de sistemas de pagamento e usuários emergentes.</span>
                             <span className="mb-3">Fortalecer a inclusão é fornecer oportunidades para que as pessoas tenham acesso pleno em diversos serviços da sociedade.</span>
                         </div>
-                        <button style={{backgroundColor:variables.terciaryColor}} onClick={() => setStep(0)} className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded self-end w-screen md:w-32 mt-5 mb-1">
+                        <button style={{backgroundColor:variables.terciaryColor}} onClick={() => setStep(0)} className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded self-end w-full md:w-32 mt-5 mb-1">
                             Refazer
                         </button>
                     </div>
