@@ -33,7 +33,7 @@ export const dummyTeam = [
     name: "Thayssa Rocha",
     description: "Responsável pela Revisão dos Materiais Desenvolvidos",
     email: "thayssa.rocha@icen.ufpa.br",
-    image: "/images/about/team/default.png"
+    image: "/images/about/team/thayssa.jpg"
   },
   {
     id: 6,
