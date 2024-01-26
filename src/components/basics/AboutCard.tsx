@@ -12,8 +12,8 @@ interface AboutCardProps {
 
 export default function AboutCard(props: AboutCardProps) {
   return (
-    <div className="text-center">
-      <Image src={props.image} alt={props.name} width={250} height={250} style={{ borderRadius: '50%' }} />
+    <div className="flex flex-col items-center text-center">
+      <Image src={props.image} alt={props.name} width={150} height={150} style={{ borderRadius: '50%' }} />
       <h2 className="text-lg mt-2">{props.name}</h2>
       { props.email && <p className="text-sm">{props.email}</p> }
       <p className="text-sm">{props.description1}</p>

@@ -33,7 +33,7 @@ const subMenuItem = [
 const menus = [].concat(menuItems, subMenuItem);
 
 const Sidebar = () => {
-  const [toggleCollapse, setToggleCollapse] = useState(false);
+  const [toggleCollapse, setToggleCollapse] = useState();
   const [isCollapsible, setIsCollapsible] = useState(false);
 
   const router = useRouter();
@@ -45,7 +45,13 @@ const Sidebar = () => {
   );
 
   useEffect(() => {
-    isMobile && setToggleCollapse(true);
+    if(localStorage.getItem("toggleCollapsed") === null) {
+      localStorage.setItem("toggleCollapsed", isMobile);
+      setToggleCollapse(isMobile);
+      console.log("isMobile", isMobile);
+      return;
+    }
+    setToggleCollapse(JSON.parse(localStorage.getItem("toggleCollapsed")));
   }, []);
 
   const wrapperClasses = classNames(
@@ -81,6 +87,8 @@ const Sidebar = () => {
 
   const handleSidebarToggle = () => {
     setToggleCollapse(!toggleCollapse);
+    console.log(localStorage.getItem("toggleCollapsed", !toggleCollapse));
+    localStorage.setItem("toggleCollapsed", !toggleCollapse);
   };
 
   return (
@@ -88,7 +96,8 @@ const Sidebar = () => {
       className={wrapperClasses}
       onMouseEnter={onMouseOver}
       onMouseLeave={onMouseOver}
-      style={{ backgroundColor: variables.primaryColor, transition: "width 300ms cubic-bezier(0.2, 0, 0, 1) 0s" }}
+      style={{ backgroundColor: variables.primaryColor }}
+      // style={{ backgroundColor: variables.primaryColor, transition: "width 300ms cubic-bezier(0.2, 0, 0, 1) 0s" }}
     >
       <div className="flex flex-col">
         <div className="flex items-center justify-between relative">

@@ -25,7 +25,7 @@ export default function AboutPage() {
                 </div>
                 
                 <h2 className="text-2xl font-bold mt-8 mb-8">Grupo de Pesquisa</h2>
-                <div className="grid grid-cols-1 md:grid-cols-4 gap-10 mt-5 mb-5">
+                <div className="grid grid-cols-1 md:grid-cols-5 gap-10 mt-5 mb-5">
                     {
                     dummyGroup.map((group) => (
                         <AboutCard

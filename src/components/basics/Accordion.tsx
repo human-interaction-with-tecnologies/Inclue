@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import parse from 'html-react-parser';
 
 const Accordion = ({ title, answer }: { title: string, answer: string }) => {
-  const [accordionOpen, setAccordionOpen] = useState(false);
+  const [accordionOpen, setAccordionOpen] = useState(true);
 
   return (
     <div className="py-2">
