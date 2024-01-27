@@ -58,7 +58,6 @@ export default function ConsiderationDetailPage() {
                             </div>
                         </>
                     }
-
                     { consideration.audios.length > 0 &&
                         <>
                             <h3 className="font-bold mb-2">Áudios</h3>
