@@ -23,7 +23,7 @@ export default function ConsiderationDetailPage() {
                 Voltar
             </Link>
             {consideration ? (
-                <div className="bg-white rounded-lg shadow-md p-4 flex flex-col gap-2">
+                <div className="bg-white rounded-lg shadow-md p-6 flex flex-col gap-2">
                     <h2 className="text-xl font-bold mb-2">
                         {consideration.title}
                     </h2>
@@ -34,31 +34,61 @@ export default function ConsiderationDetailPage() {
                             )
                         }
                     </div>
-                    <span className="mb-3">{consideration.content}</span>
-                    <div className="mb-4">
-                        <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-3">
-                            {consideration.images.map((image, index) => (
-                                <li key={index}>
-                                    <Image src={image.url} alt={image.text} width={500} height={500} />
-                                </li>
-                            ))}
-                        </ul>
-                    </div>
-                    <div>
-                        <h3 className="font-bold mb-2">Outras Referências:</h3>
-                        <ul className="list-disc ml-6">
-                            {consideration.references.map((reference, index) => (
-                                <li className="link color-inclue-terciary-color" key={index}>
-                                    <a className="underline"
-                                       target="_blanck"
-                                       href={reference.url}
-                                    >
-                                        {reference.title}
-                                    </a>
-                                </li>
-                            ))}
-                        </ul>
-                    </div>
+                    <span className="mt-3 mb-5">{consideration.content}</span>
+                    { consideration.images.length > 0 &&
+                        <>
+                            <h3 className="font-bold mb-2">Imagens</h3>
+                            <div className="mb-5 flex flex-row flex-wrap justify-center content-center gap-6">
+                                { consideration.images.map((image, index) => (
+                                    <Image className="w-11/12 sm:w-5/12 md:w-4/12 lg:w-3/12 xl:w-2/12" src={ image.url } alt={ image.text } width={ 500 } height={ 500 } />
+                                )) }
+                            </div>
+                        </>
+                    }
+                    { consideration.videos.length > 0 &&
+                        <>
+                            <h3 className="font-bold mb-2">Vídeos</h3>
+                            <div className="mb-5 flex flex-row flex-wrap justify-center content-center gap-6">
+                                { consideration.videos.map((video, index) => (
+                                    <video className="w-11/12 sm:w-5/12 md:w-4/12 lg:w-3/12 xl:w-2/12" controls preload="none">
+                                        <source src={ video.url } type={ video.type } />
+                                        Vídeo não suportado.
+                                    </video>
+                                )) }
+                            </div>
+                        </>
+                    }
+
+                    { consideration.audios.length > 0 &&
+                        <>
+                            <h3 className="font-bold mb-2">Áudios</h3>
+                            <div className="mb-5 flex flex-row flex-wrap justify-center content-center gap-6">
+                                { consideration.audios.map((audio, index) => (
+                                    <audio controls preload="none">
+                                        <source src={ audio.url } type={ audio.type } />
+                                        Áudio não suportado.
+                                    </audio>
+                                )) }
+                            </div>
+                        </>
+                    }
+                    { consideration.references.length > 0 &&
+                        <div>
+                            <h3 className="font-bold mb-2">Outras Referências</h3>
+                            <ul className="list-disc ml-6">
+                                {consideration.references.map((reference, index) => (
+                                    <li className="link color-inclue-terciary-color" key={index}>
+                                        <a className="underline"
+                                        target="_blanck"
+                                        href={reference.url}
+                                        >
+                                            {reference.title}
+                                        </a>
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+                    }            
                 </div>
             ) : (
                 <div>Loading...</div>

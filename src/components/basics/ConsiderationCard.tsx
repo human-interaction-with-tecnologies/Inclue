@@ -21,8 +21,8 @@ export default function ConsiderationCard(props: ConsiderationCardProps) {
                     }
                 </div>
             }
-            <div className="text-gray-600 mt-3 mb-3">
-                <span>{props.content}</span>
+            <div className="text-gray-600 mt-3 mb-3 text-justify">
+                <span>{props.content.length > 250 ? `${ props.content.substring(0,150) }...` : props.content }</span>
             </div>
             <span className="text-gray-600 float-right">
                 <Link
