@@ -1,6 +1,6 @@
 export const dummyConsiderations = [
     {
-        id: 1,
+        id: "1",
         title: "Adapte a máscara de um campo de dados conforme sua entrada",
         category: [
             "Entrada de Dados",
@@ -27,7 +27,7 @@ export const dummyConsiderations = [
         ]
     },
     {
-        id: 2,
+        id: "2",
         title: "Acione o comando de voz por meio de botões ou ao pronunciar palavras-chave de ativação",
         category: [
             "Entrada de Dados",
@@ -50,10 +50,67 @@ export const dummyConsiderations = [
             }
         ]
     },
-
+    {
+        id: "3",
+        title: "Apresente o teclado correspondente à entrada de dados",
+        category: [
+            "Entrada de Dados",
+            "Visual"
+        ],
+        content: "Quando utilizar máscaras em campos que aceitam dados numéricos, lembre-se de apresentar teclado numérico. Isso é interessante para mantém o design minimalista do teclado, onde serão apresentados somente os símbolos que são necessários para uma determinada inserção.",
+        images: [
+            { id: 1, url: "/images/considerations/c3-1.jpg", text: "Tela de pagar com o Pix, contendo o campo de dados para preenchimento da chave de telefone." }
+        ],
+        videos: [],
+        audios: [],
+        references: []
+    },
+    {
+        id: "4",
+        title: "Use o botão de confirmação do teclado para prosseguir em uma tarefa",
+        category: [
+            "Entrada de Dados",
+            "Visual"
+        ],
+        content: "Utilize o botão de confirmação do teclado (avançar ou check) para realizar a ação de prosseguir em uma determinada tarefa do sistema.",
+        images: [
+            { id: 1, url: "/images/considerations/c4-1.jpg", text: "Tela de pagar com o Pix, contendo o teclado com o botão de avançar." }
+        ],
+        videos: [],
+        audios: [],
+        references: []
+    },
+    {
+        id: "5a",
+        title: "Apresente uma lista com as chaves Pix criadas",
+        category: [
+            "Saída de Dados",
+            "Visual"
+        ],
+        content: "No recurso de receber com o Pix, apresente as chaves criadas anteriormente pelo usuário. Caso isso não seja feito, os usuários terão que adicionar novamente a chave na tarefa de receber via Pix, devido não apresentar uma lista com as chaves registradas anteriormente no sistema.",
+        images: [
+            { id: 1, url: "/images/considerations/c5-1.jpg", text: "Tela de pagar com o Pix, contendo o teclado com o botão de avançar." }
+        ],
+        videos: [],
+        audios: [],
+        references: []
+    },
+    {
+        id: "5b",
+        title: `Após concluir a criação de uma chave Pix, adicione à tela um botão de "Receber via Pix"`,
+        category: [
+            "Entrada de Dados",
+            "Visual"
+        ],
+        content: "Após finalizar o cadastro de uma nova chave, apresente um botão para redirecionar o usuário à tela de receber via Pix. Pois a falta desse recurso gera maiores ações a serem realizadas pelos usuários.",
+        images: [],
+        videos: [],
+        audios: [],
+        references: []
+    },
     //TODO: Terminar o conteúdo das considerações
     {
-        id: 29,
+        id: "29",
         title: "Use assistentes de voz e animações para auxiliar os usuários em suas tarefas",
         category: [
             "Entrada de Dados",
