@@ -38,9 +38,9 @@ export default function ConsiderationDetailPage() {
                     { consideration.images.length > 0 &&
                         <>
                             <h3 className="font-bold mb-2">Imagens</h3>
-                            <div className="mb-5 flex flex-row flex-wrap justify-center content-center gap-6">
+                            <div className="mb-5 flex flex-row flex-wrap justify-center content-center items-center gap-6">
                                 { consideration.images.map((image, index) => (
-                                    <Image key={ image.id } className="w-11/12 sm:w-5/12 md:w-4/12 lg:w-3/12 xl:w-2/12" src={ image.url } alt={ image.text } width={ 500 } height={ 500 } />
+                                    <Image key={ image.id } className="h-full w-11/12 sm:w-5/12 md:w-4/12 lg:w-3/12 xl:w-2/12" src={ image.url } alt={ image.text } width={ 500 } height={ 500 } />
                                 )) }
                             </div>
                         </>

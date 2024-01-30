@@ -13,18 +13,7 @@ export const dummyConsiderations = [
         ],
         videos: [],
         audios: [],
-        references: [
-            {
-                id: 1,
-                title: "First Reference",
-                url: "https://www.google.com"
-            },
-            {
-                id: 2,
-                title: "Second Reference",
-                url: "https://www.google.com"
-            }
-        ]
+        references: []
     },
     {
         id: "2",
@@ -99,7 +88,7 @@ export const dummyConsiderations = [
         id: "5b",
         title: `Após concluir a criação de uma chave Pix, adicione à tela um botão de "Receber via Pix"`,
         category: [
-            "Entrada de Dados",
+            "Saída de Dados",
             "Visual"
         ],
         content: "Após finalizar o cadastro de uma nova chave, apresente um botão para redirecionar o usuário à tela de receber via Pix. Pois a falta desse recurso gera maiores ações a serem realizadas pelos usuários.",
@@ -107,6 +96,137 @@ export const dummyConsiderations = [
         videos: [],
         audios: [],
         references: []
+    },
+    {
+        id: "6",
+        title: `Apresente ilustrações animadas que sejam de fácil entendimento para o usuário`,
+        category: [
+            "Saída de Dados",
+            "Visual"
+        ],
+        content: "As ilustrações devem ser mais próximas de um objeto real e do contexto do usuário. Assim, deve-se utilizar cores, texturas e animações que facilitem a compreensão dos usuários. Por exemplo, o Banco em um formato estático parece com uma casa, mas uma ilustração de moeda dourada sobre este objeto pode facilitar a compreensão do usuário. Nesse contexto, as ilustrações que não estejam de acordo com essas características geram dificuldades para interpretação de seus significados pelos usuários emergentes.",
+        images: [
+            { id: 1, url: "/images/considerations/c6-1.png", text: "Tela de boas-vindas apresentando uma ilustração de ajuda para ativar o recurso de saída de áudio." },
+            { id: 2, url: "/images/considerations/c6-2.gif", text: "Animação de Pix e transferência via Pix." },
+            { id: 3, url: "/images/considerations/c6-3.png", text: "Tela de boas-vindas com ilustração de ativar e desativar recurso de áudio." },
+            { id: 4, url: "/images/considerations/c6-4.gif", text: "Animação de ativar e desativar recurso de áudio." },
+            { id: 5, url: "/images/considerations/c6-5.png", text: "Tela de cadastro de segurança do aplicativo, indicando que o usuário deve finalizar o cadastro em um caixa eletrônico." },
+            { id: 6, url: "/images/considerations/c6-6.gif", text: "Animação de cadastro de dispositivo de segurança em um caixa eletrônico." }
+        ],
+        videos: [],
+        audios: [],
+        references: [
+            {
+                id: 2,
+                title: "Capra et al. (2021)",
+                url: "https://doi.org/10.21439/conexoes.v15i0.2087"
+            },
+            {
+                id: 1,
+                title: "Srivastava Ayushi e Kapania (2021)",
+                url: "https://doi.org/10.1145/3449210"
+            }
+        ]
+    },
+    {
+        id: "7",
+        title: `Mostre comprovantes que simulem o documento físico`,
+        category: [
+            "Saída de Dados",
+            "Visual"
+        ],
+        content: "Os comprovantes de envio do Pix podem facilitar o entendimento do usuário na finalização de uma tarefa. Essa interface pode simular um comprovante de pagamento em papel e devem conter informações essenciais para o usuário, contendo os dados do recebedor, valor e mensagem.",
+        images: [
+            { id: 1, url: "/images/considerations/c7-1.png", text: "Tela de boas-vindas apresentando uma ilustração de ajuda para ativar o recurso de saída de áudio." }
+       ],
+        videos: [],
+        audios: [],
+        references: [
+            {
+                id: 1,
+                title: "Capra et al. (2021)",
+                url: "https://doi.org/10.21439/conexoes.v15i0.2087"
+            },
+            {
+                id: 2,
+                title: "Srivastava Ayushi e Kapania (2021)",
+                url: "https://doi.org/10.1145/3449210"
+            }
+        ]
+    },
+    {
+        id: "8",
+        title: `Personalize o som da notificação do aplicativo com assistente de voz`,
+        category: [
+            "Saída de Dados",
+            "Áudio"
+        ],
+        content: "Caso o usuário deseje personalizar seu recurso de notificação, pode-se ativar interfaces de saídas relacionadas a alertas de voz que notifiquem um recebimento de Pix. Assim, o usuário estará ciente que recebeu um valor durante suas atividades profissionais.",
+        images: [],
+        videos: [],
+        audios: [],
+        references: [
+            {
+                id: 1,
+                title: "Capra et al. (2021)",
+                url: "https://doi.org/10.21439/conexoes.v15i0.2087"
+            },
+            {
+                id: 2,
+                title: "Srivastava Ayushi e Kapania (2021)",
+                url: "https://doi.org/10.1145/3449210"
+            }
+        ]
+    },
+    {
+        id: "9",
+        title: `Forneça títulos e legendas com fontes grandes, com poucos caracteres e palavra-chave destacada em todo aplicativo`,
+        category: [
+            "Saída de Dados",
+            "Visual"
+        ],
+        content: "Forneça textos com quantidades de caracteres pequenos e fontes grandes para, assim, melhorar a visualização e compreensão dos usuários nas ações a serem realizadas. Caso isso não seja seguido, as fontes pequenas podem dificultar a localização, compreensão e execução das tarefas dos usuários.",
+        images: [
+            { id: 1, url: "/images/considerations/c9-1.png", text: "Tela de Receber com o Pix, solicitando que o usuário insira a chave de pagamento." }
+        ],
+        videos: [],
+        audios: [],
+        references: [
+            {
+                id: 1,
+                title: "Capra et al. (2021)",
+                url: "https://doi.org/10.21439/conexoes.v15i0.2087"
+            },
+            {
+                id: 2,
+                title: "Srivastava Ayushi e Kapania (2021)",
+                url: "https://doi.org/10.1145/3449210"
+            }
+        ]
+    },
+    {
+        id: "10",
+        title: `Forneça feedback de voz para indicar os botões do teclado pressionadas pelos usuários`,
+        category: [
+            "Saída de Dados",
+            "Visual"
+        ],
+        content: "•	Inclua suporte do recurso de saída de voz nos campos de entradas de valores de texto, para indicar quais números ou letras estão sendo digitados pelos usuários em tempo real. Logo, os usuários entenderão se estão digitando os números corretamente e corrigirão possíveis desvios de inserções. A falta desse recurso pode fazer com que os usuários informem dados equivocados, ao não inspecionar um valor inserido no campo de entrada de dados e, por exemplo, realizar um pagamento equivocado.",
+        images: [],
+        videos: [],
+        audios: [],
+        references: [
+            {
+                id: 1,
+                title: "Capra et al. (2021)",
+                url: "https://doi.org/10.21439/conexoes.v15i0.2087"
+            },
+            {
+                id: 2,
+                title: "Srivastava Ayushi e Kapania (2021)",
+                url: "https://doi.org/10.1145/3449210"
+            }
+        ]
     },
     //TODO: Terminar o conteúdo das considerações
     {
