@@ -19,14 +19,14 @@ export const dummyTeam = [
     name: "Ingrid Silva",
     description: "Responsável pela Revisão dos Materiais Desenvolvidos",
     email: "ingrid.silva@icen.ufpa.br",
-    image: "/images/about/team/default.png"
+    image: "/images/about/team/ingrid.jpg"
   },
   {
     id: 4,
     name: "Rafael Salles",
     description: "Responsável pela Implementação da Plataforma",
     email: "rafael.salles@icen.ufpa.br",
-    image: "/images/about/team/default.png"
+    image: "/images/about/team/rafael.jpeg"
   },
   {
     id: 5,

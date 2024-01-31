@@ -211,7 +211,7 @@ export const dummyConsiderations = [
             "Saída de Dados",
             "Visual"
         ],
-        content: "•	Inclua suporte do recurso de saída de voz nos campos de entradas de valores de texto, para indicar quais números ou letras estão sendo digitados pelos usuários em tempo real. Logo, os usuários entenderão se estão digitando os números corretamente e corrigirão possíveis desvios de inserções. A falta desse recurso pode fazer com que os usuários informem dados equivocados, ao não inspecionar um valor inserido no campo de entrada de dados e, por exemplo, realizar um pagamento equivocado.",
+        content: "Inclua suporte do recurso de saída de voz nos campos de entradas de valores de texto, para indicar quais números ou letras estão sendo digitados pelos usuários em tempo real. Logo, os usuários entenderão se estão digitando os números corretamente e corrigirão possíveis desvios de inserções. A falta desse recurso pode fazer com que os usuários informem dados equivocados, ao não inspecionar um valor inserido no campo de entrada de dados e, por exemplo, realizar um pagamento equivocado.",
         images: [],
         videos: [],
         audios: [],
@@ -227,6 +227,176 @@ export const dummyConsiderations = [
                 url: "https://doi.org/10.1145/3449210"
             }
         ]
+    },
+    {
+        id: "11",
+        title: `Forneça feedback de voz para indicar alertas ou erros sobre os dados informados pelos usuários`,
+        category: [
+            "Saída de Dados",
+            "Áudio"
+        ],
+        content: `Forneça suporte do recurso de saída de voz nos validadores de dados digitados. Assim, os usuários compreenderão, rapidamente, que houve erro no valor informado por ele. Por exemplo, caso o usuário digite um CPF inválido, o assistente de voz destacará o campo de CPF e falará "Você digitou um CPF inválido!". Caso isso não seja seguido, os usuários podem demorar um determinado tempo para compreender as validações em texto apresentados abaixo do campo de texto. Além disso, uma outra ação a ser realizada pelo usuário será tocar mais de uma vez no botão de avançar tentando avançar para a próxima etapa.`,
+        images: [
+            { id: 1, url: "/images/considerations/c11-1.png", text: "Tela de inserção de senha, apresentando o aviso digite a senha." }
+        ],
+        videos: [],
+        audios: [
+            { id: 1, url: "/audios/considerations/c11-1.mp3", type:"audio/mp3" }
+        ],
+        references: [
+            {
+                id: 1,
+                title: "Capra et al. (2021)",
+                url: "https://doi.org/10.21439/conexoes.v15i0.2087"
+            },
+            {
+                id: 2,
+                title: "Randhawa et al. (2021)",
+                url: "https://doi.org/10.1145/3411764.3445417"
+            }
+        ]
+    },
+    {
+        id: "12",
+        title: `Apresente ícones de fácil entendimento ao usuário`,
+        category: [
+            "Saída de Dados",
+            "Áudio"
+        ],
+        content: `Forneça ícones grandes e de fácil entendimento ao usuário. Em caso de ícones abstratos correlacionados a objetos ou ações computacionais e educacionais, forneça ajuda por meio dos textos ou áudios. Caso contrário, os usuários terão dificuldades para interagir com as tarefas a serem realizadas.`,
+        images: [
+            { id: 1, url: "/images/considerations/c11-1.png", text: "Tela de inserção de senha, apresentando o aviso digite a senha." }
+        ],
+        videos: [],
+        audios: [
+            { id: 1, url: "/audios/considerations/c11-1.mp3", type:"audio/mp3" }
+        ],
+        references: []
+    },
+    {
+        id: "13",
+        title: `Forneça audiodescrição dos dados inseridos anteriormente pelos usuários`,
+        category: [
+            "Saída de Dados",
+            "Áudio"
+        ],
+        content: `Forneça um resumo, por meio do recurso de saída de voz, dos dados inseridos anteriormente pelos usuários em formulários segmentados por hierarquias de navegações lineares. No caso do Pix, os participantes poderão, a cada etapa, compreender rapidamente se estão configurando valores, destinatários, mensagens e agendamentos corretos. No final, também informe ao usuário, por meio de um recurso sonoro ou de vibração, que a tarefa foi finalizada.`,
+        images: [
+            { id: 1, url: "/images/considerations/c13-1.png", text: `Tela de pagar com o Pix, com informações da chave de email "luciano@persona.com".` }
+        ],
+        videos: [],
+        audios: [
+            { id: 1, url: "/audios/considerations/c13-1.mp3", type:"audio/mp3" }
+        ],
+        references: []
+    },
+    {
+        id: "14",
+        title: `Forneça um botão de ativação e desativação do suporte de assistente de voz`,
+        category: [
+            "Entrada de Dados",
+            "Áudio"
+        ],
+        content: `Forneça uma opção de ativação do recurso de voz no início do aplicativo. Além disso, apresente a interface de ativação e desativação nas configurações do aplicativo e no comando de voz. Dessa maneira, os usuários ou pessoas de confiança conseguirão gerenciar esse recurso. O fator de personalização deste recurso é interessante haja vista que, os usuários com mais experiências no uso de TDICs podem não escutar totalmente a explicação do assistente de voz.`,
+        images: [
+            { id: 1, url: "/images/considerations/c14-1.png", text: `Tela de boas-vindas, apresentando o botão de ativar recurso de áudio na lateral superior esquerda do aplicativo.` }
+        ],
+        videos: [],
+        audios: [],
+        references: [
+            {
+                id: 1,
+                title: "Capra et al. (2021)",
+                url: "https://doi.org/10.21439/conexoes.v15i0.2087"
+            },
+            {
+                id: 2,
+                title: "Srivastava Ayushi e Kapania (2021)",
+                url: "https://doi.org/10.1145/3449210"
+            },
+            {
+                id: 3,
+                title: "Thies (2015)",
+                url: "https://doi.org/10.1561/1100000047"
+            }
+        ]
+    },
+    {
+        id: "15",
+        title: `Disponibilize um gráfico que facilite a visualização de saldo ao enviar ou receber um Pix`,
+        category: [
+            "Saída de Dados",
+            "Visual"
+        ],
+        content: `apresente uma lista de recebedores favoritos no recurso de pagar com Pix. Isso é importante pois os usuários emergentes relatam que este é um recurso prático para utilizar e encontrar o destinatário do pagamento.`,
+        images: [
+            { id: 1, url: "/images/considerations/c15-1.png", text: `Tela de pagar com o Pix, apresentando a opção de inserir uma chave Pix ou escolher uma recebedor por meio da lista de favoritos.` }
+        ],
+        videos: [],
+        audios: [],
+        references: [
+            {
+                id: 1,
+                title: "Srivastava Ayushi e Kapania (2021)",
+                url: "https://doi.org/10.1145/3449210"
+            }
+        ]
+    },
+    {
+        id: "16a",
+        title: `Apresente uma lista com as chaves Pix de usuários favoritos`,
+        category: [
+            "Saída de Dados",
+            "Visual"
+        ],
+        content: `Forneça uma lista de 5 a 7 recebedores favoritos na primeira tela de pagar com o Pix.`,
+        images: [
+            { id: 1, url: "/images/considerations/c16a-1.png", text: `Tela de pagar com o Pix, contendo um campo de entrada de valor de 565 reais e um gráfico circular informando que ficará 1435 reais.` }
+        ],
+        videos: [],
+        audios: [],
+        references: [
+            {
+                id: 1,
+                title: " Modesto e Ferreira (2013)",
+                url: "https://dl.acm.org/doi/abs/10.5555/2577101.2577112"
+            }
+        ]
+    },
+    {
+        id: "16b",
+        title: `Possibilite ao usuário favoritar a chave Pix do recebedor no processo de pagar com Pix`,
+        category: [
+            "Saída de Dados",
+            "Visual"
+        ],
+        content: `Faça com que os usuários consigam salvar seus recebedores favoritos. Isso é importante pois os usuários emergentes relatam que este é um recurso prático para utilizar e encontrar mais facilmente um recebedor do pagamento.`,
+        images: [
+        ],
+        videos: [],
+        audios: [],
+        references: []
+    },
+    {
+        id: "17",
+        title: `Ao realizar tarefas de preenchimento de formulários, exiba uma única tarefa por vez na tela`,
+        category: [
+            "Entrada de Dados",
+            "Visual"
+        ],
+        content: `Os formulários podem ser divididos em atividades menores, pois facilitam a compreensão dos usuários que focarão em uma tarefa específica. Por exemplo, pode-se utilizar algumas perguntas como: (i) "Quanto será enviado à pessoa?" (ii) "O Pix será enviado para quem?", (iii) "O que você deseja informar para pessoa?". No protótipo utilizado pelos participantes, segmentou-se esses formulários com a metodologia 5W2H.`,
+        images: [
+            { id: 1, url: "/images/considerations/c17-1.png", text: `Tela de pagar com o Pix, contendo o formulário de quem deve receber.` },
+            { id: 2, url: "/images/considerations/c17-2.png", text: `Tela de pagar com o Pix, contendo o formulário de quanto deve ser pago.` },
+            { id: 3, url: "/images/considerations/c17-3.png", text: `Tela de pagar com o Pix, contendo o formulário como a pessoa deve ser informada.` },
+        ],
+        videos: [],
+        audios: [
+            { id: 1, url: "/audios/considerations/c17-1.mp3", type:"audio/mp3" },
+            { id: 2, url: "/audios/considerations/c17-2.mp3", type:"audio/mp3" },
+            { id: 3, url: "/audios/considerations/c17-3.mp3", type:"audio/mp3" }
+        ],
+        references: []
     },
     //TODO: Terminar o conteúdo das considerações
     {
