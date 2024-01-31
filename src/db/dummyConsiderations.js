@@ -384,7 +384,7 @@ export const dummyConsiderations = [
             "Entrada de Dados",
             "Visual"
         ],
-        content: `Os formulários podem ser divididos em atividades menores, pois facilitam a compreensão dos usuários que focarão em uma tarefa específica. Por exemplo, pode-se utilizar algumas perguntas como: (i) "Quanto será enviado à pessoa?" (ii) "O Pix será enviado para quem?", (iii) "O que você deseja informar para pessoa?". No protótipo utilizado pelos participantes, segmentou-se esses formulários com a metodologia 5W2H.`,
+        content: `Os formulários podem ser divididos em atividades menores, pois facilitam a compreensão dos usuários que focarão em uma tarefa específica. Por exemplo, pode-se utilizar algumas perguntas como: (i) "Quanto será enviado à pessoa?" (ii) "O Pix será enviado para quem?", (iii) "O que você deseja informar para pessoa?". A metodologia 5W2H é um exemplo que pode ser utilizado para segmentar os formulários.`,
         images: [
             { id: 1, url: "/images/considerations/c17-1.png", text: `Tela de pagar com o Pix, contendo o formulário de quem deve receber.` },
             { id: 2, url: "/images/considerations/c17-2.png", text: `Tela de pagar com o Pix, contendo o formulário de quanto deve ser pago.` },
