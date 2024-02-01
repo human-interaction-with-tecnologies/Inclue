@@ -9,7 +9,6 @@ export const dummyConsiderations = [
         content: "O campo de entrada de dados deve centralizar diferentes tipos de informações, caso o formulário forneça mais de uma entrada de dados. Por exemplo, o usuário pode informar uma chave Pix de e-mail, cpf ou Telefone de um recebedor em um mesmo campo de entrada de dados. Todavia, a máscara e a ilustração devem acompanhar a interação de entrada deste usuário.",
         images: [
             { id: 1, url: "/images/considerations/c1-1.jpg", text: "Tela de pagamento com o Pix, apresentando um campo de entrada de dados que centraliza as opções de pagamento e uma lista com recebores recentes." }
-            
         ],
         videos: [],
         audios: [],
@@ -35,7 +34,7 @@ export const dummyConsiderations = [
             {
                 id: 1,
                 title: "Thies (2015)",
-                url: "https://doi.org/10.1561/1100000047"
+                url: "https://doi.org/10.1145/3391203.3391217"
             }
         ]
     },
@@ -78,7 +77,7 @@ export const dummyConsiderations = [
         ],
         content: "No recurso de receber com o Pix, apresente as chaves criadas anteriormente pelo usuário. Caso isso não seja feito, os usuários terão que adicionar novamente a chave na tarefa de receber via Pix, devido não apresentar uma lista com as chaves registradas anteriormente no sistema.",
         images: [
-            { id: 1, url: "/images/considerations/c5-1.jpg", text: "Tela de pagar com o Pix, contendo o teclado com o botão de avançar." }
+            { id: 1, url: "/images/considerations/c5a-1.jpg", text: "Tela de pagar com o Pix, contendo o teclado com o botão de avançar." }
         ],
         videos: [],
         audios: [],
@@ -117,12 +116,12 @@ export const dummyConsiderations = [
         audios: [],
         references: [
             {
-                id: 2,
+                id: 1,
                 title: "Capra et al. (2021)",
                 url: "https://doi.org/10.21439/conexoes.v15i0.2087"
             },
             {
-                id: 1,
+                id: 2,
                 title: "Srivastava Ayushi e Kapania (2021)",
                 url: "https://doi.org/10.1145/3449210"
             }
@@ -208,8 +207,8 @@ export const dummyConsiderations = [
         id: "10",
         title: `Forneça feedback de voz para indicar os botões do teclado pressionadas pelos usuários`,
         category: [
-            "Saída de Dados",
-            "Visual"
+            "Entrada de Dados",
+            "Áudio"
         ],
         content: "Inclua suporte do recurso de saída de voz nos campos de entradas de valores de texto, para indicar quais números ou letras estão sendo digitados pelos usuários em tempo real. Logo, os usuários entenderão se estão digitando os números corretamente e corrigirão possíveis desvios de inserções. A falta desse recurso pode fazer com que os usuários informem dados equivocados, ao não inspecionar um valor inserido no campo de entrada de dados e, por exemplo, realizar um pagamento equivocado.",
         images: [],
@@ -265,12 +264,10 @@ export const dummyConsiderations = [
         ],
         content: `Forneça ícones grandes e de fácil entendimento ao usuário. Em caso de ícones abstratos correlacionados a objetos ou ações computacionais e educacionais, forneça ajuda por meio dos textos ou áudios. Caso contrário, os usuários terão dificuldades para interagir com as tarefas a serem realizadas.`,
         images: [
-            { id: 1, url: "/images/considerations/c11-1.png", text: "Tela de inserção de senha, apresentando o aviso digite a senha." }
+            { id: 1, url: "/images/considerations/c12-1.png", text: "Tela de área do Pix, com o destaque no ícone do Pagar via chave." }
         ],
         videos: [],
-        audios: [
-            { id: 1, url: "/audios/considerations/c11-1.mp3", type:"audio/mp3" }
-        ],
+        audios: [],
         references: []
     },
     {
@@ -295,7 +292,7 @@ export const dummyConsiderations = [
         title: `Forneça um botão de ativação e desativação do suporte de assistente de voz`,
         category: [
             "Entrada de Dados",
-            "Áudio"
+            "Visual"
         ],
         content: `Forneça uma opção de ativação do recurso de voz no início do aplicativo. Além disso, apresente a interface de ativação e desativação nas configurações do aplicativo e no comando de voz. Dessa maneira, os usuários ou pessoas de confiança conseguirão gerenciar esse recurso. O fator de personalização deste recurso é interessante haja vista que, os usuários com mais experiências no uso de TDICs podem não escutar totalmente a explicação do assistente de voz.`,
         images: [
@@ -318,6 +315,11 @@ export const dummyConsiderations = [
                 id: 3,
                 title: "Thies (2015)",
                 url: "https://doi.org/10.1561/1100000047"
+            },
+            {
+                id: 4,
+                title: "Gupta et al. (2022)",
+                url: "https://doi.org/10.1145/3530190.3534824"
             }
         ]
     },
@@ -328,7 +330,7 @@ export const dummyConsiderations = [
             "Saída de Dados",
             "Visual"
         ],
-        content: `apresente uma lista de recebedores favoritos no recurso de pagar com Pix. Isso é importante pois os usuários emergentes relatam que este é um recurso prático para utilizar e encontrar o destinatário do pagamento.`,
+        content: `Apresente uma lista de recebedores favoritos no recurso de pagar com Pix. Isso é importante pois os usuários emergentes relatam que este é um recurso prático para utilizar e encontrar o destinatário do pagamento.`,
         images: [
             { id: 1, url: "/images/considerations/c15-1.png", text: `Tela de pagar com o Pix, apresentando a opção de inserir uma chave Pix ou escolher uma recebedor por meio da lista de favoritos.` }
         ],
@@ -396,9 +398,258 @@ export const dummyConsiderations = [
             { id: 2, url: "/audios/considerations/c17-2.mp3", type:"audio/mp3" },
             { id: 3, url: "/audios/considerations/c17-3.mp3", type:"audio/mp3" }
         ],
+        references: [
+            {
+                id: 1,
+                title: "Srivastava Ayushi e Kapania (2021)",
+                url: "https://doi.org/10.1145/3449210"
+            },
+            {
+                id: 2,
+                title: "Thies (2015)",
+                url: "https://doi.org/10.1561/1100000047"
+            }
+        ]
+    },
+    {
+        id: "18",
+        title: `Disponibilize a opção de editar os dados inseridos antes de concluir a tarefa`,
+        category: [
+            "Saída de Dados",
+            "Visual"
+        ],
+        content: `Durante a navegação no formulário, forneça aos usuários a possibilidade de alterar os dados inseridos anteriormente. Essa consideração é necessária para que eles consigam realizar ajustes em formulários fragmentados.`,
+        images: [],
+        videos: [],
+        audios: [],
         references: []
     },
-    //TODO: Terminar o conteúdo das considerações
+    {
+        id: "19",
+        title: `Defina ordens claras nos formulários para amenizar erros`,
+        category: [
+            "Saída de Dados",
+            "Visual"
+        ],
+        content: `Deve-se definir uma ordem clara e fácil nos formulários segmentados, considerando as atividades essenciais a serem realizadas pelos usuários. As imagens de exemplo, apresentadas a seguir, destacam, respectivamente, as interações nas etapas de indicação de recebimento, o valor de pagamento e as informações adicionais. Nesse contexto, o usuário pode iniciar com a etapa de valor a ser enviado e, em seguida, indicar quem receberá o Pix, evitando uma transferência equivocada. A mensagem para o recebedor é importante, mas sabe-se que será enviado o valor certo para o destinatário correto, mesmo que a descrição do pagamento esteja equivocada.`,
+        images: [
+            { id: 1, url: "/images/considerations/c17-1.png", text: `Tela de pagar com o Pix, contendo o formulário de quem deve receber.` },
+            { id: 2, url: "/images/considerations/c17-2.png", text: `Tela de pagar com o Pix, contendo o formulário de quanto deve ser pago.` },
+            { id: 3, url: "/images/considerations/c17-3.png", text: `Tela de pagar com o Pix, contendo o formulário como a pessoa deve ser informada.` },
+        ],
+        videos: [],
+        audios: [],
+        references: []
+    },
+    {
+        id: "20a",
+        title: `Apresente efeitos visuais quando ocorrer mudança de tela`,
+        category: [
+            "Saída de Dados",
+            "Visual"
+        ],
+        content: `As trocas de telas devem fornecer efeitos visuais aos usuários. Isso facilitará a compreensão da mudança de atividade do sistema durante sua interação. Por exemplo, efeitos de deslizar em recursos de boas-vindas devem facilitar o entendimento que a tela está avançando. Assim, a barra de progresso também facilita a compreensão do estado da tarefa em que o usuário se encontra.`,
+        images: [
+            { id: 1, url: "/images/considerations/c20-1.png", text: `Tela de boas-vindas do aplicativo, onde está destacado a barra de progresso.` },
+        ],
+        videos: [],
+        audios: [],
+        references: []
+    },
+    {
+        id: "20b",
+        title: `Apresente efeitos de áudio quando ocorrer mudanças de tela`,
+        category: [
+            "Saída de Dados",
+            "Visual"
+        ],
+        content: `Além das mudanças visuais, os usuários tendem a observar a mudança de telas por meio de instruções sonoras dadas pelos assistentes de voz.`,
+        images: [],
+        videos: [],
+        audios: [
+            { id: 1, url: "/audios/considerations/c20b-1.mp3", type:"audio/mp3" }
+        ],
+        references: []
+    },
+    {
+        id: "21",
+        title: `Evite botões de voltar em telas de finalização da tarefa`,
+        category: [
+            "Saída de Dados",
+            "Visual"
+        ],
+        content: `Evite utilizar botões com ações de voltar em telas de finalização da tarefa, tais como nos recursos de pagar, receber ou criar chave Pix. Essa consideração é interessante para tornar a interação dos usuários mais rápidas e evitar ações supérfluas após a finalização de uma determinada tarefa e retornar à área principal do serviço.`,
+        images: [
+            { id: 1, url: "/images/considerations/c21-1.png", text: `Tela de pagar com o Pix apresentando o comprovante de pagamento e um exemplo de botão de voltar que não deveria existir.` },
+        ],
+        videos: [],
+        audios: [],
+        references: []
+    },
+    {
+        id: "22",
+        title: `Após as instruções de primeiro acesso, forneça um botão para criar chave Pix`,
+        category: [
+            "Entrada de Dados",
+            "Visual"
+        ],
+        content: `No primeiro acesso à área Pix, após explicar suas funcionalidades, forneça a possibilidade de criação de uma chave.`,
+        images: [],
+        videos: [],
+        audios: [],
+        references: [
+            {
+                id: 1,
+                title: "Bacen (2022e)",
+                url: "https://www.bcb.gov.br/content/estabilidadefinanceira/pix/Regulamento_Pix/IV_RequisitosMinimosparaExperienciadoUsuario.pdf"
+            }
+        ]
+    },
+    {
+        id: "23",
+        title: `Fortaleça a autenticação do usuário via comando de voz, com dados pessoais não sensíveis`,
+        category: [
+            "Entrada de Dados",
+            "Áudio"
+        ],
+        content: `Em relação à segurança do comando de voz em transações com o Pix, pode-se utilizar combinações de reconhecimento de voz e perguntas aleatórias que somente o usuário proprietário saberá responder. Esse recurso servirá para o comando de voz identificar a autenticidade do usuário.`,
+        images: [
+        ],
+        videos: [],
+        audios: [],
+        references: [
+            {
+                id: 1,
+                title: "Randhawa et al. (2021)",
+                url: "https://doi.org/10.1145/3411764.3445417"
+            }
+        ]
+    },
+    {
+        id: "24",
+        title: `O assistente de voz deve perguntar se o usuário está em um ambiente seguro antes de fornecer informações pessoais`,
+        category: [
+            "Saída de Dados",
+            "Visual"
+        ],
+        content: `Quando o usuário acionar o recurso de comando de voz para saber valores, recebimentos ou outras informações sensíveis, verifique se o usuário está em um ambiente seguro para ter tal informação. Desse modo, informe se o usuário confirmar tal validação.`,
+        images: [
+        ],
+        videos: [],
+        audios: [],
+        references: []
+    },
+    {
+        id: "25",
+        title: `Realize a cópia automática do código de validação enviado para o smartphone`,
+        category: [
+            "Entrada de Dados",
+            "Visual"
+        ],
+        content: `Após chegar um código de verificação do usuário na central de mensagens ou e-mail do Telefone, faça com que o aplicativo leia essas informações automaticamente.`,
+        images: [
+        ],
+        videos: [],
+        audios: [],
+        references: [
+            {
+                id: 1,
+                title: "Srivastava Ayushi e Kapania (2021)",
+                url: "https://doi.org/10.1145/3449210"
+            }
+        ]
+    },
+    {
+        id: "26a",
+        title: `Ajude o usuário por meio de um agente virtual`,
+        category: [
+            "Entrada de Dados",
+            "Áudio",
+            "Visual"
+        ],
+        content: `Disponibilize um agente virtual que dicas e ajuda ao usuário durante a utilização do sistema.`,
+        images: [
+        ],
+        videos: [],
+        audios: [],
+        references: [
+            {
+                id: 1,
+                title: "Capra et al. (2021)",
+                url: "https://doi.org/10.21439/conexoes.v15i0.2087"
+            },
+            {
+                id: 2,
+                title: "Srivastava Ayushi e Kapania (2021)",
+                url: "https://doi.org/10.1145/3449210"
+            }
+        ]
+    },
+    {
+        id: "26b",
+        title: `Forneça alertas de voz por tempo de inatividade`,
+        category: [
+            "Entrada de Dados",
+            "Áudio"
+        ],
+        content: `Alertas em voz devem aparecer após um determinado tempo sem interação do usuário ou quando ele interagir equivocadamente para realizar uma tarefa.`,
+        images: [
+        ],
+        videos: [],
+        audios: [],
+        references: [
+            {
+                id: 1,
+                title: "Capra et al. (2021)",
+                url: "https://doi.org/10.21439/conexoes.v15i0.2087"
+            },
+            {
+                id: 2,
+                title: "Srivastava Ayushi e Kapania (2021)",
+                url: "https://doi.org/10.1145/3449210"
+            }
+        ]
+    },
+    {
+        id: "27",
+        title: `Ao pressionar um elemento, acione a audiodescrição para apresentar o seu nome`,
+        category: [
+            "Saída de Dados",
+            "Áudio"
+        ],
+        content: `Dicas podem ser úteis quando os usuários pressionam um determinado elemento. Assim, alertas de voz podem surgir quando o usuário estiver com dúvida de uma determinada interface, seja botões ou campo de entrada de texto.`,
+        images: [
+        ],
+        videos: [],
+        audios: [],
+        references: []
+    },
+    {
+        id: "28",
+        title: `As instruções devem ser breves e destacar palavras-chave em ações específicas`,
+        category: [
+            "Entrada de Dados",
+            "Visual"
+        ],
+        content: `Os textos que forneçam instrução aos usuários devem ser grandes em tamanho e possuir pequenas quantidades de caracteres. Por outro lado, utilizar negrito nas palavras-chaves pode ser interessante para o usuário identificar ou relembrar o que poderia fazer em uma determinada atividade.`,
+        images: [
+            { id: 1, url: "/images/considerations/c28-1.png", text: `Tela de acessar conta, com uma instrução "digite seu CPF no campo a seguir.", campo de cpf e um botão de avançar. A frase "digite seu CPF" está em negrito.` },
+        ],
+        videos: [],
+        audios: [],
+        references: [
+            {
+                id: 1,
+                title: "Capra et al. (2021)",
+                url: "https://doi.org/10.21439/conexoes.v15i0.2087"
+            },
+            {
+                id: 2,
+                title: "Srivastava Ayushi e Kapania (2021)",
+                url: "https://doi.org/10.1145/3449210"
+            }
+        ]
+    },
     {
         id: "29",
         title: "Use assistentes de voz e animações para auxiliar os usuários em suas tarefas",
@@ -408,21 +659,26 @@ export const dummyConsiderations = [
             "Visual",
             "Áudio"
         ],
-        content: "utilize recursos de voz e ilustrações animadas para auxiliar os usuários em determinadas tarefas. Estes recursos são mais acessíveis para o consumo de dados em comparação com vídeos e mais compreensíveis em relação aos textos descritivos na tela ou em seções de ajuda.",
+        content: "Utilize recursos de voz e ilustrações animadas para auxiliar os usuários em determinadas tarefas. Estes recursos são mais acessíveis para o consumo de dados em comparação com vídeos e mais compreensíveis em relação aos textos descritivos na tela ou em seções de ajuda.",
         images: [],
         videos: [],
         audios: [
             { id: 1, url: "/audios/considerations/c29-1.mp3", type:"audio/mp3" },
             { id: 2, url: "/audios/considerations/c29-2.mp3", type:"audio/mp3" },
             { id: 3, url: "/audios/considerations/c29-3.mp3", type:"audio/mp3" },
-            { id: 3, url: "/audios/considerations/c29-4.mp3", type:"audio/mp3" }
+            { id: 4, url: "/audios/considerations/c29-4.mp3", type:"audio/mp3" }
         ],
         references: [
             {
                 id: 1,
-                title: "Thies (2015)",
-                url: "https://doi.org/10.1561/1100000047"
-            }
+                title: "Capra et al. (2021)",
+                url: "https://doi.org/10.21439/conexoes.v15i0.2087"
+            },
+            {
+                id: 2,
+                title: "Tulaskar (2020)",
+                url: "https://doi.org/10.1145/3391203.3391217"
+            },
         ]
     }
 ];
