@@ -5,7 +5,7 @@ import variables from "@/styles/variables.module.scss";
 
 export default function QuestionsPage() {
 
-    const [questionsMax, setQuestionsMax] = useState(10);
+    const [questionsMax, setQuestionsMax] = useState(7);
     const [step, setStep] = useState(0);
     const [setting, setSetting] = useState({quantity: 0, categories: ["Considerações", "Personas"], questions: [] as any, answers: [] as any});
     const [answersIdInMoment, setAnswersIdInMoment] = useState(-1);
