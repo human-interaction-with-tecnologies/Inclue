@@ -37,9 +37,9 @@ export default function ConsiderationDetailPage() {
                     <span className="mt-3 mb-5">{consideration.content}</span>
                     { consideration.images.length > 0 &&
                         <>
-                            <h3 className="font-bold mb-2">Imagens</h3>
+                            <h3 className="font-bold mb-2">{consideration.images.length > 1 ? "Imagens de exemplo" : "Imagem de exemplo"}</h3>
                             <div className="mb-5 flex flex-row flex-wrap justify-center content-center items-center gap-6">
-                                { consideration.images.map((image, index) => (
+                                { consideration.images.map((image) => (
                                     <Image key={ image.id } className="h-full w-11/12 sm:w-5/12 md:w-4/12 lg:w-3/12 xl:w-2/12" src={ image.url } alt={ image.text } width={ 500 } height={ 500 } />
                                 )) }
                             </div>
@@ -47,9 +47,9 @@ export default function ConsiderationDetailPage() {
                     }
                     { consideration.videos.length > 0 &&
                         <>
-                            <h3 className="font-bold mb-2">Vídeos</h3>
+                            <h3 className="font-bold mb-2">{consideration.videos.length > 1 ? "Vídeos de exemplo" : "Vídeo de exemplo"}</h3>
                             <div className="mb-5 flex flex-row flex-wrap justify-center content-center gap-6">
-                                { consideration.videos.map((video, index) => (
+                                { consideration.videos.map((video) => (
                                     <video key={ video.id } className="w-11/12 sm:w-5/12 md:w-4/12 lg:w-3/12 xl:w-2/12" controls preload="none">
                                         <source src={ video.url } type={ video.type } />
                                         Vídeo não suportado.
@@ -60,9 +60,9 @@ export default function ConsiderationDetailPage() {
                     }
                     { consideration.audios.length > 0 &&
                         <>
-                            <h3 className="font-bold mb-2">Áudios</h3>
+                            <h3 className="font-bold mb-2">{consideration.audios.length > 1 ? "Áudios de exemplo" : "Áudio de exemplo"}</h3>
                             <div className="mb-5 flex flex-row flex-wrap justify-center content-center gap-6">
-                                { consideration.audios.map((audio, index) => (
+                                { consideration.audios.map((audio) => (
                                     <audio key={ audio.id } className="w-11/12 sm:w-5/12 md:w-4/12 lg:w-3/12 xl:w-2/12" controls preload="none">
                                         <source src={ audio.url } type={ audio.type } />
                                         Áudio não suportado.

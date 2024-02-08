@@ -36,7 +36,7 @@ export default function ConsiderationsPage() {
         (selectedCategory?.length == 0 || selectedCategory?.every((item) => consideration.category.includes(item))) &&
         (searchText === "" ||
           consideration.title.toLowerCase().includes(searchText.toLowerCase()) ||
-          consideration.content.toLowerCase().includes(searchText.toLowerCase())));
+          consideration.content.toLowerCase().includes(searchText.toLowerCase()))).sort();
     setFilteredConsiderations(filteredConsiderations);
   };
 

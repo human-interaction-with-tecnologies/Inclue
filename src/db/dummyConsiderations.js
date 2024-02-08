@@ -2,7 +2,7 @@ export const dummyConsiderations = [
     {
         //1
         id: 1,
-        title: "Adapte a máscara de um campo de dados conforme sua entrada",
+        title: "1. Adapte a máscara de um campo de dados conforme sua entrada",
         category: [
             "Entrada de Dados",
             "Visual"
@@ -18,7 +18,7 @@ export const dummyConsiderations = [
     {
         //2
         id: 2,
-        title: "Acione o comando de voz por meio de botões ou ao pronunciar palavras-chave de ativação",
+        title: "2. Acione o comando de voz por meio de botões ou ao pronunciar palavras-chave de ativação",
         category: [
             "Entrada de Dados",
             "Áudio"
@@ -43,7 +43,7 @@ export const dummyConsiderations = [
     {
         //3
         id: 3,
-        title: "Apresente o teclado correspondente à entrada de dados",
+        title: "3. Apresente o teclado correspondente à entrada de dados",
         category: [
             "Entrada de Dados",
             "Visual"
@@ -58,7 +58,7 @@ export const dummyConsiderations = [
     },
     {
         id: 4,
-        title: "Use o botão de confirmação do teclado para prosseguir em uma tarefa",
+        title: "4. Use o botão de confirmação do teclado para prosseguir em uma tarefa",
         category: [
             "Entrada de Dados",
             "Visual"
@@ -74,7 +74,7 @@ export const dummyConsiderations = [
     {
         //5a
         id: 5,
-        title: "Apresente uma lista com as chaves Pix criadas",
+        title: "5. Apresente uma lista com as chaves Pix criadas",
         category: [
             "Saída de Dados",
             "Visual"
@@ -90,7 +90,7 @@ export const dummyConsiderations = [
     {
         //5b
         id: 6,
-        title: `Após concluir a criação de uma chave Pix, adicione à tela um botão de "Receber via Pix"`,
+        title: `6. Após concluir a criação de uma chave Pix, adicione à tela um botão de "Receber via Pix"`,
         category: [
             "Saída de Dados",
             "Visual"
@@ -104,7 +104,7 @@ export const dummyConsiderations = [
     {
         //6
         id: 7,
-        title: `Apresente ilustrações animadas que sejam de fácil entendimento para o usuário`,
+        title: `7. Apresente ilustrações animadas que sejam de fácil entendimento para o usuário`,
         category: [
             "Saída de Dados",
             "Visual"
@@ -136,7 +136,7 @@ export const dummyConsiderations = [
     {
         //7
         id: 8,
-        title: `Mostre comprovantes que simulem o documento físico`,
+        title: `8. Mostre comprovantes que simulem o documento físico`,
         category: [
             "Saída de Dados",
             "Visual"
@@ -163,7 +163,7 @@ export const dummyConsiderations = [
     {
         //8
         id: 9,
-        title: `Personalize o som da notificação do aplicativo com assistente de voz`,
+        title: `9. Personalize o som da notificação do aplicativo com assistente de voz`,
         category: [
             "Saída de Dados",
             "Áudio"
@@ -188,7 +188,7 @@ export const dummyConsiderations = [
     {
         //9
         id: 10,
-        title: `Forneça títulos e legendas com fontes grandes, com poucos caracteres e palavra-chave destacada em todo aplicativo`,
+        title: `10. Forneça títulos e legendas com fontes grandes, com poucos caracteres e palavra-chave destacada em todo aplicativo`,
         category: [
             "Saída de Dados",
             "Visual"
@@ -215,7 +215,7 @@ export const dummyConsiderations = [
     {
         //10
         id: 11,
-        title: `Forneça feedback de voz para indicar os botões do teclado pressionadas pelos usuários`,
+        title: `11. Forneça feedback de voz para indicar os botões do teclado pressionadas pelos usuários`,
         category: [
             "Entrada de Dados",
             "Áudio"
@@ -240,7 +240,7 @@ export const dummyConsiderations = [
     {
         //11
         id: 12,
-        title: `Forneça feedback de voz para indicar alertas ou erros sobre os dados informados pelos usuários`,
+        title: `12. Forneça feedback de voz para indicar alertas ou erros sobre os dados informados pelos usuários`,
         category: [
             "Saída de Dados",
             "Áudio"
@@ -269,7 +269,7 @@ export const dummyConsiderations = [
     {
         //12
         id: 13,
-        title: `Apresente ícones de fácil entendimento ao usuário`,
+        title: `13. Apresente ícones de fácil entendimento ao usuário`,
         category: [
             "Saída de Dados",
             "Áudio"
@@ -285,7 +285,7 @@ export const dummyConsiderations = [
     {
         //13
         id: 14,
-        title: `Forneça audiodescrição dos dados inseridos anteriormente pelos usuários`,
+        title: `14. Forneça audiodescrição dos dados inseridos anteriormente pelos usuários`,
         category: [
             "Saída de Dados",
             "Áudio"
@@ -303,7 +303,7 @@ export const dummyConsiderations = [
     {
         //14
         id: 15,
-        title: `Forneça um botão de ativação e desativação do suporte de assistente de voz`,
+        title: `15. Forneça um botão de ativação e desativação do suporte de assistente de voz`,
         category: [
             "Entrada de Dados",
             "Visual"
@@ -340,7 +340,7 @@ export const dummyConsiderations = [
     {
         //15
         id: 16,
-        title: `Disponibilize um gráfico que facilite a visualização de saldo ao enviar ou receber um Pix`,
+        title: `16. Disponibilize um gráfico que facilite a visualização de saldo ao enviar ou receber um Pix`,
         category: [
             "Saída de Dados",
             "Visual"
@@ -362,7 +362,7 @@ export const dummyConsiderations = [
     {
         //16a
         id: 17,
-        title: `Apresente uma lista com as chaves Pix de usuários favoritos`,
+        title: `17. Apresente uma lista com as chaves Pix de usuários favoritos`,
         category: [
             "Saída de Dados",
             "Visual"
@@ -384,7 +384,7 @@ export const dummyConsiderations = [
     {
         //16b
         id: 18,
-        title: `Possibilite ao usuário favoritar a chave Pix do recebedor no processo de pagar com Pix`,
+        title: `18. Possibilite ao usuário favoritar a chave Pix do recebedor no processo de pagar com Pix`,
         category: [
             "Saída de Dados",
             "Visual"
@@ -399,7 +399,7 @@ export const dummyConsiderations = [
     {
         //17
         id: 19,
-        title: `Ao realizar tarefas de preenchimento de formulários, exiba uma única tarefa por vez na tela`,
+        title: `19. Ao realizar tarefas de preenchimento de formulários, exiba uma única tarefa por vez na tela`,
         category: [
             "Entrada de Dados",
             "Visual"
@@ -432,7 +432,7 @@ export const dummyConsiderations = [
     {
         //18
         id: 20,
-        title: `Disponibilize a opção de editar os dados inseridos antes de concluir a tarefa`,
+        title: `20. Disponibilize a opção de editar os dados inseridos antes de concluir a tarefa`,
         category: [
             "Saída de Dados",
             "Visual"
@@ -446,7 +446,7 @@ export const dummyConsiderations = [
     {
         //19
         id: 21,
-        title: `Defina ordens claras nos formulários para amenizar erros`,
+        title: `21. Defina ordens claras nos formulários para amenizar erros`,
         category: [
             "Saída de Dados",
             "Visual"
@@ -469,7 +469,7 @@ export const dummyConsiderations = [
             "Saída de Dados",
             "Visual"
         ],
-        content: `As trocas de telas devem fornecer efeitos visuais aos usuários. Isso facilitará a compreensão da mudança de atividade do sistema durante sua interação. Por exemplo, efeitos de deslizar em recursos de boas-vindas devem facilitar o entendimento que a tela está avançando. Assim, a barra de progresso também facilita a compreensão do estado da tarefa em que o usuário se encontra`,
+        content: `22. As trocas de telas devem fornecer efeitos visuais aos usuários. Isso facilitará a compreensão da mudança de atividade do sistema durante sua interação. Por exemplo, efeitos de deslizar em recursos de boas-vindas devem facilitar o entendimento que a tela está avançando. Assim, a barra de progresso também facilita a compreensão do estado da tarefa em que o usuário se encontra`,
         images: [
             { id: 1, url: "/images/considerations/c20-1.png", text: `Tela de boas-vindas do aplicativo, onde está destacado a barra de progresso.` },
         ],
@@ -480,7 +480,7 @@ export const dummyConsiderations = [
     {
         //20b
         id: 23,
-        title: `Apresente efeitos de áudio quando ocorrer mudanças de tela`,
+        title: `23. Apresente efeitos de áudio quando ocorrer mudanças de tela`,
         category: [
             "Saída de Dados",
             "Visual"
@@ -496,7 +496,7 @@ export const dummyConsiderations = [
     {
         //21
         id: 24,
-        title: `Evite botões de voltar em telas de finalização da tarefa`,
+        title: `24. Evite botões de voltar em telas de finalização da tarefa`,
         category: [
             "Saída de Dados",
             "Visual"
@@ -512,7 +512,7 @@ export const dummyConsiderations = [
     {
         //22
         id: 25,
-        title: `Após as instruções de primeiro acesso, forneça um botão para criar chave Pix`,
+        title: `25. Após as instruções de primeiro acesso, forneça um botão para criar chave Pix`,
         category: [
             "Entrada de Dados",
             "Visual"
@@ -532,7 +532,7 @@ export const dummyConsiderations = [
     {
         //23
         id: 26,
-        title: `Fortaleça a autenticação do usuário via comando de voz, com dados pessoais não sensíveis`,
+        title: `26. Fortaleça a autenticação do usuário via comando de voz, com dados pessoais não sensíveis`,
         category: [
             "Entrada de Dados",
             "Áudio"
@@ -553,7 +553,7 @@ export const dummyConsiderations = [
     {
         //24
         id: 27,
-        title: `O assistente de voz deve perguntar se o usuário está em um ambiente seguro antes de fornecer informações pessoais`,
+        title: `27. O assistente de voz deve perguntar se o usuário está em um ambiente seguro antes de fornecer informações pessoais`,
         category: [
             "Saída de Dados",
             "Visual"
@@ -568,7 +568,7 @@ export const dummyConsiderations = [
     {
         //25
         id: 28,
-        title: `Realize a cópia automática do código de validação enviado para o smartphone`,
+        title: `28. Realize a cópia automática do código de validação enviado para o smartphone`,
         category: [
             "Entrada de Dados",
             "Visual"
@@ -589,7 +589,7 @@ export const dummyConsiderations = [
     {
         //26a
         id: 29,
-        title: `Ajude o usuário por meio de um agente virtual`,
+        title: `29. Ajude o usuário por meio de um agente virtual`,
         category: [
             "Entrada de Dados",
             "Áudio",
@@ -616,7 +616,7 @@ export const dummyConsiderations = [
     {
         //26b
         id: 30,
-        title: `Forneça alertas de voz por tempo de inatividade`,
+        title: `30. Forneça alertas de voz por tempo de inatividade`,
         category: [
             "Entrada de Dados",
             "Áudio"
@@ -642,7 +642,7 @@ export const dummyConsiderations = [
     {
         //27
         id: 31,
-        title: `Ao pressionar um elemento, acione a audiodescrição para apresentar o seu nome`,
+        title: `31. Ao pressionar um elemento, acione a audiodescrição para apresentar o seu nome`,
         category: [
             "Saída de Dados",
             "Áudio"
@@ -657,7 +657,7 @@ export const dummyConsiderations = [
     {
         //28
         id: 32,
-        title: `As instruções devem ser breves e destacar palavras-chave em ações específicas`,
+        title: `32. As instruções devem ser breves e destacar palavras-chave em ações específicas`,
         category: [
             "Entrada de Dados",
             "Visual"
@@ -684,7 +684,7 @@ export const dummyConsiderations = [
     {
         //29
         id: 33,
-        title: "Use assistentes de voz e animações para auxiliar os usuários em suas tarefas",
+        title: "33. Use assistentes de voz e animações para auxiliar os usuários em suas tarefas",
         category: [
             "Entrada de Dados",
             "Saída de Dados",
