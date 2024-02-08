@@ -4,12 +4,13 @@ import { dummyCategories } from "../../db/dummyCategories";
 import ConsiderationCard from "@/components/basics/ConsiderationCard";
 import Accordion from "@/components/basics/Accordion";
 
-import {useEffect, useState } from "react";
+import {use, useEffect, useState } from "react";
 
 
 export default function ConsiderationsPage() {
   const [selectedCategory, setSelectedCategory] = useState<Array<string>>([]);
   const [searchText, setSearchText] = useState("");
+  const [filteredConsiderations, setFilteredConsiderations] = useState(considerationsByCategory);
 
   const handleCategoryClick = (category: string) => {
     if (selectedCategory?.includes(category)) {
@@ -20,21 +21,28 @@ export default function ConsiderationsPage() {
   };
 
   useEffect(() => {
-    console.log(selectedCategory);
+    console.log("considerações", selectedCategory);
+    filterConsiderations();
   }, [selectedCategory]);
+  
+  useEffect(() => {
+    console.log("considerações", filteredConsiderations);
+    filterConsiderations();
+  }, [searchText]);
+
+  const filterConsiderations = () => {
+    let filteredConsiderations = considerationsByCategory().filter(
+      (consideration) =>
+        (selectedCategory?.length == 0 || selectedCategory?.every((item) => consideration.category.includes(item))) &&
+        (searchText === "" ||
+          consideration.title.toLowerCase().includes(searchText.toLowerCase()) ||
+          consideration.content.toLowerCase().includes(searchText.toLowerCase())));
+    setFilteredConsiderations(filteredConsiderations);
+  };
 
   const handleSearchTextChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setSearchText(event.target.value);
   };
-
-  const filteredConsiderations = considerationsByCategory().filter(
-    (consideration) =>
-      (selectedCategory?.length == 0 || selectedCategory?.every((item) => consideration.category.includes(item))) &&
-      (searchText === "" ||
-        consideration.title.toLowerCase().includes(searchText.toLowerCase()) ||
-        consideration.content.toLowerCase().includes(searchText.toLowerCase()))
-  
-  );
 
   return (
     <Layout title="Considerações de Design e Avaliação">
@@ -54,13 +62,13 @@ export default function ConsiderationsPage() {
           </div>
         </div>
       </div>
-      <div className="flex flex-wrap gap-3 mb-2 mt-5">
+      <div className="flex flex-wrap gap-3 mt-5 mb-2">
         {dummyCategories.map((category) => (
           <button
             className={`bg-blue-500 shadow-md text-white px-3 py-1 rounded-xl ${
               selectedCategory?.includes(category)
-                ? "bg-inclue-terciary-color"
-                : "bg-inclue-primary-color"
+                ? "bg-inclue-secondary-color-with-hover"
+                : "bg-inclue-primary-color-with-hover"
             }`}
             key={category}
             onClick={() => handleCategoryClick(category)}
@@ -87,6 +95,22 @@ export default function ConsiderationsPage() {
           </span>
         </div>`}
       />
+      <div>
+        <div className="flex flex-wrap gap-3 mt-3">
+            <span className="text-sm">
+              <strong>Quantidade de Considerações: </strong>{`${filteredConsiderations.length}`}
+            </span>
+        </div>
+        {
+          selectedCategory.length > 0 && (
+            <div className="flex flex-wrap gap-3 mb-3 mt-1">
+                <span className="text-sm">
+                  <strong>Categorias selecionadas: </strong>{`${selectedCategory.toString().replaceAll(",", ", ")}`}
+                </span>
+            </div>
+          )
+        }
+      </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 mt-4 gap-4">
         {filteredConsiderations.map((consideration) => {
           return (

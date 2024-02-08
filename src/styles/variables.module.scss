@@ -22,8 +22,24 @@ $white-color: #FFFFFF;
     background-color: $primary-color;
 }
 
+.bg-inclue-primary-color-with-hover {
+    background-color: $primary-color;
+    &:hover {
+        background-color: $primary-color !important;
+        filter: brightness(125%);
+    }
+}
+
 .bg-inclue-secondary-color {
     background-color: $secondary-color;
+}
+
+.bg-inclue-secondary-color-with-hover {
+    background-color: $secondary-color;
+    &:hover {
+        background-color: $secondary-color !important;
+        filter: brightness(115%);
+    }
 }
 
 .bg-inclue-white-color {

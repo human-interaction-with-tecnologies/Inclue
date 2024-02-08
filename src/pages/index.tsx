@@ -6,10 +6,10 @@ export default function Home() {
   return (
     <Layout title="Início">
       <div className="flex flex-col items-center bg-white shadow-md rounded-lg py-5 px-5 mt-7">
-        <h2 className="text-lg font-bold mb-4 w-full">Bem-vindo ao Inclue</h2>
+        <h2 className="text-lg font-bold mb-4 w-full">Bem-vindo à plataforma Inclue!</h2>
         <div className="text-gray-600 grid gap-3">
           <span>
-            A Inclue é uma plataforma que tem como o objetivo fortalecer a inclusão digital de pessoas que historicamente estiveram distantes das evoluções computacionais, chamados de usuários emergentes, e enfrentam barreiras para acesso a sistemas de pagamentos instantâneos.
+            A Inclue é uma plataforma que tem como objetivo fortalecer a inclusão digital de pessoas que historicamente estiveram distantes das evoluções computacionais, chamados de usuários emergentes, e enfrentam barreiras para acesso a sistemas de pagamentos instantâneos.
           </span>
         </div>
         <Logo className="w-full md:w-3/12" />
@@ -19,14 +19,14 @@ export default function Home() {
           </span>
           <ul className="list-disc ml-6">
             <li><strong>Incluir:</strong> incluir os usuários emergentes aos sistemas interativos</li>
-            <li><strong>Nortear:</strong> nortear os designers sobre as características de interação de usuário</li>
-            <li><strong>Conectar:</strong> conectar os Sistemas de Pagamento Instantâneos como uma alternativa de gestão financeira aos usuários emergentes</li>
+            <li><strong>Nortear:</strong> nortear os designers sobre as características de interação do usuário</li>
+            <li><strong>Conectar:</strong> conectar os Sistemas de Pagamento Instantâneo como uma alternativa de gestão financeira aos usuários emergentes</li>
             <li><strong>Legitimar:</strong> legitimar os usuários emergentes como protagonistas dos serviços digitais e desenvolvimento sustentável</li>
           </ul>
           <span>Desse modo, nessa plataforma você interagirá com:</span>
           <ul className="list-disc ml-6">
             <li>
-              <strong>Considerações de design e avaliação</strong> para sistemas de pagamento instantâneos
+              <strong>Considerações de design e avaliação</strong> para Sistemas de Pagamento Instantâneo
             </li>
             <li>
               <strong>Personas</strong> que apresentam as características sociais, digitais e financeiras de usuários emergentes
