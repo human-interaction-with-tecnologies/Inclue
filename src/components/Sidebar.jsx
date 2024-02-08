@@ -18,16 +18,16 @@ import { randomUUID } from "crypto";
 
 const menuItems = [
     { id: 1, label: "Início", icon: HomeIcon, link: "/", stroke: false },
-    { id: 2, label: "Considerações de Design", icon: ArticleIcon, link: "/inclue/considerations", stroke: false },
-    { id: 3, label: "Personas", icon: UsersIcon, link: "/inclue/personas", stroke: true },
-    { id: 4, label: "Perguntas e Respostas",  icon: QuestionsIcon, link: "/inclue/questions", stroke: false },
-    { id: 5, label: "Sobre", icon: AboutIcon, link: "/inclue/about", stroke: false },
+    { id: 2, label: "Considerações de Design", icon: ArticleIcon, link: "/considerations", stroke: false },
+    { id: 3, label: "Personas", icon: UsersIcon, link: "/personas", stroke: true },
+    { id: 4, label: "Perguntas e Respostas",  icon: QuestionsIcon, link: "/questions", stroke: false },
+    { id: 5, label: "Sobre", icon: AboutIcon, link: "/about", stroke: false },
 ];
 
 
 // Para implemetar uma página auxiliar, você deve criar aqui o item auxiliar com id do pai e a rota do page
 const subMenuItem = [
-  { id: 2, label: "Considerações de Design", icon: ArticleIcon, link: "/inclue/consideration/[id]" }
+  { id: 2, label: "Considerações de Design", icon: ArticleIcon, link: "/consideration/[id]" }
 ];
 
 const menus = [].concat(menuItems, subMenuItem);

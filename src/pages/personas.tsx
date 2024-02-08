@@ -1,6 +1,6 @@
 import Layout from "@/components/Layout";
 import PersonaCard from "@/components/basics/PersonaCard";
-import { dummyPersonas } from "../../db/dummyPersonas";
+import { dummyPersonas } from "../db/dummyPersonas";
 
 export default function PersonasPage() {
     return (

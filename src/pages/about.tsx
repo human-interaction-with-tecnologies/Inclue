@@ -1,9 +1,9 @@
 
 import Layout from "@/components/Layout";
 import AboutCard from "@/components/basics/AboutCard";
-import { dummyTeam } from "../../db/dummyTeam";
-import { dummyGroup } from "../../db/dummyGroup";
-import { dummyAboutReferences } from "../../db/dummyAboutReferences";
+import { dummyTeam } from "../db/dummyTeam";
+import { dummyGroup } from "../db/dummyGroup";
+import { dummyAboutReferences } from "../db/dummyAboutReferences";
 
 export default function AboutPage() {
     return (

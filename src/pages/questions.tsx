@@ -1,6 +1,6 @@
 import Layout from "@/components/Layout";
 import { useEffect, useState } from "react";
-import { dummyQuestions } from "../../db/dummyQuestions";
+import { dummyQuestions } from "../db/dummyQuestions";
 import variables from "@/styles/variables.module.scss";
 
 export default function QuestionsPage() {

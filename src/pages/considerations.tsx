@@ -1,6 +1,6 @@
 import Layout from "@/components/Layout";
-import { considerationsByCategory } from "../../db/considerationsByCategory";
-import { dummyCategories } from "../../db/dummyCategories";
+import { considerationsByCategory } from "../db/considerationsByCategory";
+import { dummyCategories } from "../db/dummyCategories";
 import ConsiderationCard from "@/components/basics/ConsiderationCard";
 import Accordion from "@/components/basics/Accordion";
 

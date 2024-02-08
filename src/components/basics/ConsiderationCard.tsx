@@ -28,7 +28,7 @@ export default function ConsiderationCard(props: ConsiderationCardProps) {
             </div>
             <span className="text-gray-600 ml-auto mt-auto">
                 <Link
-                    className="underline color-inclue-terciary-color" href={`/inclue/consideration/${props.id}`}>Leia mais</Link>
+                    className="underline color-inclue-terciary-color" href={`/consideration/${props.id}`}>Leia mais</Link>
             </span>
         </div>
     )
