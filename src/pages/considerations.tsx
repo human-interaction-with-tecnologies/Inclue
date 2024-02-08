@@ -21,12 +21,10 @@ export default function ConsiderationsPage() {
   };
 
   useEffect(() => {
-    console.log("considerações", selectedCategory);
     filterConsiderations();
   }, [selectedCategory]);
   
   useEffect(() => {
-    console.log("considerações", filteredConsiderations);
     filterConsiderations();
   }, [searchText]);
 
