@@ -30,7 +30,7 @@ export default function ConsiderationCard(props: ConsiderationCardProps) {
                 <Link
                     className="underline color-inclue-terciary-color"
                     href={{
-                        pathname: `/consideration`,
+                        pathname: `/consideration/[id]`,
                         query: { id: props.id }
                     }}
                 >
