@@ -27,7 +27,7 @@ const menuItems = [
 
 // Para implemetar uma página auxiliar, você deve criar aqui o item auxiliar com id do pai e a rota do page
 const subMenuItem = [
-  { id: 2, label: "Considerações de Design", icon: ArticleIcon, link: "/consideration/[id]" }
+  { id: 2, label: "Considerações de Design", icon: ArticleIcon, link: "/considerations/[id]" }
 ];
 
 const menus = [].concat(menuItems, subMenuItem);
