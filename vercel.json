@@ -1,5 +1,8 @@
 {
     "rewrites": [
-      { "source": "/inclue/consideration/:id*", "destination": "/inclue/consideration/:id*" }
+      {
+        "source": "/inclue/consideration/:id*",
+        "destination": "https://inclue.vercel.app/inclue/consideration/:id*"
+      }
     ]
-  }
+}
