@@ -7,7 +7,7 @@ export const dummyConsiderations = [
             "Entrada de Dados",
             "Visual"
         ],
-        content: "O campo de entrada de dados deve centralizar diferentes tipos de informações, caso o formulário forneça mais de uma entrada de dados. Por exemplo, o usuário pode informar uma chave Pix de e-mail, cpf ou Telefone de um recebedor em um mesmo campo de entrada de dados. Todavia, a máscara e a ilustração devem acompanhar a interação de entrada deste usuário",
+        content: "O campo de entrada de dados deve centralizar diferentes tipos de informações, caso o formulário forneça mais de uma entrada de dados. Por exemplo, o usuário pode informar uma chave Pix de e-mail, CPF ou telefone de um recebedor em um mesmo campo de entrada de dados. Todavia, a máscara e a ilustração devem acompanhar a interação de entrada deste usuário",
         images: [
             { id: 1, url: "/images/considerations/c1-1.jpg", text: "Tela de pagamento com o Pix, apresentando um campo de entrada de dados que centraliza as opções de pagamento e uma lista com recebores recentes." }
         ],
@@ -48,7 +48,7 @@ export const dummyConsiderations = [
             "Entrada de Dados",
             "Visual"
         ],
-        content: "Quando utilizar máscaras em campos que aceitam dados numéricos, lembre-se de apresentar teclado numérico. Isso é interessante para mantém o design minimalista do teclado, onde serão apresentados somente os símbolos que são necessários para uma determinada inserção",
+        content: "Quando utilizar máscaras em campos que aceitam dados numéricos, lembre-se de apresentar teclado numérico. Isso é interessante para manter o design minimalista do teclado, onde serão apresentados somente os símbolos que são necessários para uma determinada inserção",
         images: [
             { id: 1, url: "/images/considerations/c3-1.jpg", text: "Tela de pagar com o Pix, contendo o campo de dados para preenchimento da chave de telefone." }
         ],
@@ -168,7 +168,7 @@ export const dummyConsiderations = [
             "Saída de Dados",
             "Áudio"
         ],
-        content: "Caso o usuário deseje personalizar seu recurso de notificação, pode-se ativar interfaces de saídas relacionadas a alertas de voz que notifiquem um recebimento de Pix. Assim, o usuário estará ciente que recebeu um valor durante suas atividades profissionais",
+        content: "Caso o usuário desejar personalizar seu recurso de notificação, pode-se ativar interfaces de saídas relacionadas a alertas de voz que notifiquem um recebimento de Pix. Assim, o usuário estará ciente que recebeu um valor durante suas atividades profissionais",
         images: [],
         videos: [],
         audios: [],
@@ -188,7 +188,7 @@ export const dummyConsiderations = [
     {
         //9
         id: 10,
-        title: `10. Forneça títulos e legendas com fontes grandes, com poucos caracteres e palavra-chave destacada em todo aplicativo`,
+        title: `10. Forneça títulos e legendas com fontes grandes, com poucos caracteres e palavras-chave destacadas em todo aplicativo`,
         category: [
             "Saída de Dados",
             "Visual"
@@ -308,7 +308,7 @@ export const dummyConsiderations = [
             "Entrada de Dados",
             "Visual"
         ],
-        content: `Forneça uma opção de ativação do recurso de voz no início do aplicativo. Além disso, apresente a interface de ativação e desativação nas configurações do aplicativo e no comando de voz. Dessa maneira, os usuários ou pessoas de confiança conseguirão gerenciar esse recurso. O fator de personalização deste recurso é interessante haja vista que, os usuários com mais experiências no uso de TDICs podem não escutar totalmente a explicação do assistente de voz`,
+        content: `Forneça uma opção de ativação do recurso de voz no início do aplicativo. Além disso, apresente a interface de ativação e desativação nas configurações do aplicativo e no comando de voz. Dessa maneira, os usuários ou pessoas de confiança conseguirão gerenciar esse recurso. O fator de personalização deste recurso é interessante haja vista que, os usuários com mais experiências no uso de Tecnologias Digitais de Informação e Comunicação podem não escutar totalmente a explicação do assistente de voz`,
         images: [
             { id: 1, url: "/images/considerations/c14-1.png", text: `Tela de boas-vindas, apresentando o botão de ativar recurso de áudio na lateral superior esquerda do aplicativo.` }
         ],
@@ -345,7 +345,7 @@ export const dummyConsiderations = [
             "Saída de Dados",
             "Visual"
         ],
-        content: `Apresente uma lista de recebedores favoritos no recurso de pagar com Pix. Isso é importante pois os usuários emergentes relatam que este é um recurso prático para utilizar e encontrar o destinatário do pagamento`,
+        content: `Apresente um gráfico que facilite a visualização de crédito ou débito futuro, quando o usuário estiver digitando um valor de recebimento ou pagamento com o Pix. Nesse contexto, os usuários indicaram que esses gráficos devem facilitar suas interações e compreensão de créditos ou débitos da conta`,
         images: [
             { id: 1, url: "/images/considerations/c15-1.png", text: `Tela de pagar com o Pix, apresentando a opção de inserir uma chave Pix ou escolher uma recebedor por meio da lista de favoritos.` }
         ],
@@ -404,7 +404,7 @@ export const dummyConsiderations = [
             "Entrada de Dados",
             "Visual"
         ],
-        content: `Os formulários podem ser divididos em atividades menores, pois facilitam a compreensão dos usuários que focarão em uma tarefa específica. Por exemplo, pode-se utilizar algumas perguntas como: (i) "Quanto será enviado à pessoa?" (ii) "O Pix será enviado para quem?", (iii) "O que você deseja informar para pessoa?". A metodologia 5W2H é um exemplo que pode ser utilizado para segmentar os formulários`,
+        content: `Os formulários podem ser divididos em atividades menores, pois facilitam a compreensão dos usuários que focarão em uma tarefa específica. Por exemplo, pode-se utilizar algumas perguntas como: 1) "Quanto será enviado à pessoa?" 2) "O Pix será enviado para quem?", 3) "O que você deseja informar para pessoa?". A metodologia 5W2H é um exemplo que pode ser utilizado para segmentar os formulários`,
         images: [
             { id: 1, url: "/images/considerations/c17-1.png", text: `Tela de pagar com o Pix, contendo o formulário de quem deve receber.` },
             { id: 2, url: "/images/considerations/c17-2.png", text: `Tela de pagar com o Pix, contendo o formulário de quanto deve ser pago.` },
@@ -573,7 +573,7 @@ export const dummyConsiderations = [
             "Entrada de Dados",
             "Visual"
         ],
-        content: `Após chegar um código de verificação do usuário na central de mensagens ou e-mail do Telefone, faça com que o aplicativo leia essas informações automaticamente`,
+        content: `Após chegar um código de verificação do usuário na central de mensagens ou e-mail do telefone, faça com que o aplicativo leia essas informações automaticamente`,
         images: [
         ],
         videos: [],
@@ -595,7 +595,7 @@ export const dummyConsiderations = [
             "Áudio",
             "Visual"
         ],
-        content: `Disponibilize um agente virtual que dicas e ajuda ao usuário durante a utilização do sistema`,
+        content: `Disponibilize um agente virtual que forneça dicas e ajuda ao usuário durante a sua utilização do sistema`,
         images: [
         ],
         videos: [],
@@ -621,7 +621,7 @@ export const dummyConsiderations = [
             "Entrada de Dados",
             "Áudio"
         ],
-        content: `Alertas em voz devem aparecer após um determinado tempo sem interação do usuário ou quando ele interagir equivocadamente para realizar uma tarefa`,
+        content: `Alertas de voz devem aparecer após um determinado tempo sem interação do usuário ou quando ele interagir equivocadamente para realizar uma tarefa`,
         images: [
         ],
         videos: [],
@@ -664,7 +664,7 @@ export const dummyConsiderations = [
         ],
         content: `Os textos que forneçam instrução aos usuários devem ser grandes em tamanho e possuir pequenas quantidades de caracteres. Por outro lado, utilizar negrito nas palavras-chaves pode ser interessante para o usuário identificar ou relembrar o que poderia fazer em uma determinada atividade`,
         images: [
-            { id: 1, url: "/images/considerations/c28-1.png", text: `Tela de acessar conta, com uma instrução "digite seu CPF no campo a seguir.", campo de cpf e um botão de avançar. A frase "digite seu CPF" está em negrito.` },
+            { id: 1, url: "/images/considerations/c28-1.png", text: `Tela de acessar conta, com uma instrução "digite seu CPF no campo a seguir.", campo de CPF e um botão de avançar. A frase "digite seu CPF" está em negrito.` },
         ],
         videos: [],
         audios: [],
