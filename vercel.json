@@ -1,5 +1,5 @@
 {
     "rewrites": [
-      { "source": "/(.*)", "destination": "/" }
+      { "source": "/inclue/consideration/:id*", "destination": "/inclue/consideration/:id" }
     ]
   }
