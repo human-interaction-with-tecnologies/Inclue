@@ -1,8 +1,8 @@
 {
     "rewrites": [
       {
-        "source": "/consideration/:path*",
-        "destination": "https://inclue.vercel.app/consideration/:path*"
+        "source": "/consideration/1",
+        "destination": "/consideration/1"
       }
     ]
   }
