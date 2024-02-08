@@ -1,6 +1,6 @@
 import Layout from "@/components/Layout";
 import Link from "next/link";
-import { dummyConsiderations } from "../../db/dummyConsiderations";
+import { dummyConsiderations } from "../db/dummyConsiderations";
 import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 import Image from 'next/image';

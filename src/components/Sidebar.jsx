@@ -14,7 +14,6 @@ import {
     UsersIcon,
     QuestionsIcon
   } from "./icons";
-import { randomUUID } from "crypto";
 
 const menuItems = [
     { id: 1, label: "Início", icon: HomeIcon, link: "/", stroke: false },
@@ -27,13 +26,13 @@ const menuItems = [
 
 // Para implemetar uma página auxiliar, você deve criar aqui o item auxiliar com id do pai e a rota do page
 const subMenuItem = [
-  { id: 2, label: "Considerações de Design", icon: ArticleIcon, link: "/consideration/[id]" }
+  { id: 2, label: "Considerações de Design", icon: ArticleIcon, link: "/consideration" },
 ];
 
 const menus = [].concat(menuItems, subMenuItem);
 
 const Sidebar = () => {
-  const [toggleCollapse, setToggleCollapse] = useState();
+  const [toggleCollapse, setToggleCollapse] = useState(false);
   const [isCollapsible, setIsCollapsible] = useState(false);
 
   const router = useRouter();
@@ -102,7 +101,7 @@ const Sidebar = () => {
       <div className="flex flex-col">
         <div className="flex items-center justify-between relative">
           <div className="flex items-center gap-4">
-            <LogoIcon  width={ toggleCollapse ? "3.25em" : "5em" } height={ toggleCollapse ? "3.25em" : "5em" } />
+          <LogoIcon  width={ toggleCollapse ? "3.25em" : "5em" } height={ toggleCollapse ? "3.25em" : "5em" } />
             <span
               className={classNames("mt-2 text-lg font-medium", {
                 hidden: toggleCollapse,
