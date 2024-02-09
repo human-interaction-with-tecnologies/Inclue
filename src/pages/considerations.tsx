@@ -94,7 +94,7 @@ export default function ConsiderationsPage() {
         </div>`}
       />
       <div>
-        <div className="flex flex-wrap gap-3 mt-3">
+        <div className="flex flex-wrap gap-3 mt-2 mb-5">
             <span className="text-sm">
               <strong>Quantidade de Considerações: </strong>{`${filteredConsiderations.length}`}
             </span>
