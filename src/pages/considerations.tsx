@@ -86,10 +86,10 @@ export default function ConsiderationsPage() {
             <strong>Saída de dados:</strong> elementos da interface apresentados aos usuários.
           </span>
           <span>
-            <strong>Áudio:</strong> elementos da interface com recursos de voz que apoiam os usuários.
+            <strong>Visual:</strong> elementos visuais da interface disponibilizados aos usuários.
           </span>
           <span>
-            <strong>Visual:</strong> elementos visuais da interface disponibilizados aos usuários.
+            <strong>Áudio:</strong> elementos da interface com recursos de voz que apoiam os usuários.
           </span>
         </div>`}
       />
@@ -99,15 +99,6 @@ export default function ConsiderationsPage() {
               <strong>Quantidade de Considerações: </strong>{`${filteredConsiderations.length}`}
             </span>
         </div>
-        {
-          selectedCategory.length > 0 && (
-            <div className="flex flex-wrap gap-3 mb-3 mt-1">
-                <span className="text-sm">
-                  <strong>Categorias selecionadas: </strong>{`${selectedCategory.toString().replaceAll(",", ", ")}`}
-                </span>
-            </div>
-          )
-        }
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 mt-4 gap-4">
         {filteredConsiderations.map((consideration) => {
