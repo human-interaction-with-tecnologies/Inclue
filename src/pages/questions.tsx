@@ -51,6 +51,11 @@ export default function QuestionsPage() {
 
     return (
         <Layout title="Perguntas e Respostas">
+            <div className="flex flex-wrap gap-3 mt-3">
+                <span className="text-md">
+                    Nessa seção você poderá responder algumas perguntas construídas para você testar seu conhecimento sobre usuários emergentes e pagamento instantâneos.
+                </span>
+            </div>
             {step > 0 && step <= setting.quantity && (
             <a className="underline flex items-center gap-1 mt-4" onClick={() => setStep(step-1)}>
                 <svg width="18" height="15" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">

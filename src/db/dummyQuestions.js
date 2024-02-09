@@ -21,11 +21,11 @@ export const dummyQuestions = [
         description: "Quais dessas dificuldades de acesso são encontradas em usuários emergentes?",
         category: "Personas",
         options: [
-            { id: 1, text: "Acesso à escolaridade", value: false },
-            { id: 2, text: "Acesso à programas do governo", value: false },
-            { id: 3, text: "Acesso à informação", value: false },
-            { id: 4, text: "Acesso à recursos digitais", value: false },
-            { id: 5, text: "Acesso à saúde", value: false }
+            { id: 1, text: "Acesso à escolaridade.", value: false },
+            { id: 2, text: "Acesso à programas do governo.", value: false },
+            { id: 3, text: "Acesso à informação.", value: false },
+            { id: 4, text: "Acesso à recursos digitais.", value: true },
+            { id: 5, text: "Acesso à saúde.", value: false }
         ]
     },
     {
@@ -49,11 +49,11 @@ export const dummyQuestions = [
         description: "Sobre as considerações de entrada de dados, o sistema deve:",
         category: "Considerações",
         options: [
-            { id: 1, text: "Mostrar as informações solicitadas", value: false },
-            { id: 2, text: "Agrupar formulários na mesma tela", value: false },
-            { id: 3, text: "Inserir dados apenas por teclado", value: true },
-            { id: 4, text: "Realizar busca apenas por áudio", value: false },
-            { id: 5, text: "Eventos de clique em botões são opcionais", value: false }
+            { id: 1, text: "Mostrar as informações solicitadas.", value: false },
+            { id: 2, text: "Agrupar formulários na mesma tela.", value: false },
+            { id: 3, text: "Inserir dados apenas por teclado.", value: true },
+            { id: 4, text: "Realizar busca apenas por áudio.", value: false },
+            { id: 5, text: "Eventos de clique em botões são opcionais.", value: false }
         ]
     },
     {
@@ -63,9 +63,9 @@ export const dummyQuestions = [
         description: "Sobre as considerações de saída de dados, o sistema deve:",
         category: "Considerações",
         options: [
-            { id: 1, text: "Informações sobre finalização de tarefas são opcionais", value: false },
-            { id: 2, text: "Animações de interação são opcionais", value: true },
-            { id: 3, text: "Fornecer com clareza os dados solicitados", value: false }
+            { id: 1, text: "Informações sobre finalização de tarefas são opcionais.", value: false },
+            { id: 2, text: "Animações de interação são opcionais.", value: false },
+            { id: 3, text: "Fornecer com clareza os dados solicitados.", value: true }
         ]
     },
     {
@@ -75,11 +75,11 @@ export const dummyQuestions = [
         description: "Sobre a interface, é correto afirmar",
         category: "Considerações",
         options: [
-            { id: 1, text: "Ícones de fácil compreensão são opcionais", value: false },
-            { id: 2, text: "Menu de ajuda são opcionais", value: false },
-            { id: 3, text: "Textos de fácil compreensão são fundamentais para o entendimento da tarefa", value: true },
-            { id: 4, text: "Forneça ícones pequenos com design minimalista por todo aplicativo", value: false },
-            { id: 5, text: "Palavras destacadas dificultam a compreensão da tarefa", value: false }
+            { id: 1, text: "Ícones de fácil compreensão são opcionais.", value: false },
+            { id: 2, text: "Menu de ajuda são opcionais.", value: false },
+            { id: 3, text: "Textos de fácil compreensão são fundamentais para o entendimento da tarefa.", value: true },
+            { id: 4, text: "Forneça ícones pequenos com design minimalista por todo aplicativo.", value: false },
+            { id: 5, text: "Palavras destacadas dificultam a compreensão da tarefa.", value: false }
         ]
     },
     {
@@ -89,11 +89,11 @@ export const dummyQuestions = [
         description: "Sobre as considerações de design sobre áudio, é correto afirmar:",
         category: "Considerações",
         options: [
-            { id: 1, text: "Configurações de áudio são configuradas pelo sistema operacional", value: false },
-            { id: 2, text: "Recursos de áudio são opcionais", value: false },
-            { id: 3, text: "Recursos de áudio devem estar presente em todo aplicativo", value: true },
-            { id: 4, text: "Pesquisa por áudio devem ser disponibilizadas em menu de ajuda", value: false },
-            { id: 5, text: "As notificações não devem reproduzir áudio", value: false }
+            { id: 1, text: "Configurações de áudio são configuradas pelo sistema operacional.", value: false },
+            { id: 2, text: "Recursos de áudio são opcionais.", value: false },
+            { id: 3, text: "Recursos de áudio devem estar presente em todo aplicativo.", value: true },
+            { id: 4, text: "Pesquisa por áudio devem ser disponibilizadas em menu de ajuda.", value: false },
+            { id: 5, text: "As notificações não devem reproduzir áudio.", value: false }
         ]
     }
 ];
