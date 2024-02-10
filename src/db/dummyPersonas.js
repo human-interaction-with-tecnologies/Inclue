@@ -11,7 +11,7 @@ export const dummyPersonas = [
     id: 2,
     name: "José Silva",
     description: "José tem 50 anos e exerce a profissão de cozinheiro na cidade de Itapiri. Natural da região nordeste do país, mudou-se para a região sudeste aos 25 anos, por convite de um amigo, a fim de abrir um restaurante de comidas típicas. Em 2020, o ambiente de trabalho de José foi afetado pela pandemia de Covid-19, levando-o a receber auxílios emergenciais para ajudar na renda familiar e no seu negócio. Apesar disso, ele mencionou que utilizava o smartphone para enviar áudios aos seus filhos e atender às ligações dos clientes de seu restaurante. Dessa forma, solicitou o suporte de seus filhos para aprender a utilizar aplicativos de auxílios financeiros e de pagamentos instantâneos.",
-    characteristics: ["Cozinheiro", "50 anos", "Pouco contato com Smartphones", "Utiliza sistema de pagamento com suporte de familiares"],
+    characteristics: ["Empreendedor e Cozinheiro", "50 anos", "Pouco contato com Smartphones", "Utiliza sistema de pagamento com suporte de familiares"],
     image: "/images/personas/persona-2.jpg"
   },
   {

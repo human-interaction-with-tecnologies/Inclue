@@ -18,14 +18,14 @@ export const dummyQuestions = [
         //2p
         id: 2,
         title: "Características dos Usuários Emergentes",
-        description: "Quais dessas dificuldades de acesso são encontradas em usuários emergentes?",
+        description: "Quais dessas dificuldades os usuários emergentes enfrentam em seu cotidiano?",
         category: "Personas",
         options: [
-            { id: 1, text: "Acesso à escolaridade.", value: false },
-            { id: 2, text: "Acesso à programas do governo.", value: false },
-            { id: 3, text: "Acesso à informação.", value: false },
-            { id: 4, text: "Acesso à recursos digitais.", value: true },
-            { id: 5, text: "Acesso à saúde.", value: false }
+            { id: 1, text: "Apenas ao acesso à escolaridade.", value: false },
+            { id: 2, text: "Apenas ao acesso aos programas do governo.", value: false },
+            { id: 3, text: "Apenas ao acesso à saúde.", value: false },
+            { id: 4, text: "Apenas ao acesso aos serviços financeiros.", value: false },
+            { id: 5, text: "Acesso a qualquer serviço tradicional (escola, programas sociais, saúde, financeiros, etc), desde que seja mediado por tecnologias digitais.", value: true }
         ]
     },
     {
@@ -63,8 +63,8 @@ export const dummyQuestions = [
         description: "Sobre as considerações de saída de dados, o sistema deve:",
         category: "Considerações",
         options: [
-            { id: 1, text: "Informações sobre finalização de tarefas são opcionais.", value: false },
-            { id: 2, text: "Animações de interação são opcionais.", value: false },
+            { id: 1, text: "Disponilizar informações sobre finalização de tarefas são opcionais.", value: false },
+            { id: 2, text: "Apresentar animações de interação são opcionais.", value: false },
             { id: 3, text: "Fornecer com clareza os dados solicitados.", value: true }
         ]
     },
