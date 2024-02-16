@@ -464,12 +464,12 @@ export const dummyConsiderations = [
     {
         //20a
         id: 22,
-        title: `Apresente efeitos visuais quando ocorrer mudança de tela`,
+        title: `22. Apresente efeitos visuais quando ocorrer mudança de tela`,
         category: [
             "Saída de Dados",
             "Visual"
         ],
-        content: `22. As trocas de telas devem fornecer efeitos visuais aos usuários. Isso facilitará a compreensão da mudança de atividade do sistema durante sua interação. Por exemplo, efeitos de deslizar em recursos de boas-vindas devem facilitar o entendimento que a tela está avançando. Assim, a barra de progresso também facilita a compreensão do estado da tarefa em que o usuário se encontra`,
+        content: `As trocas de telas devem fornecer efeitos visuais aos usuários. Isso facilitará a compreensão da mudança de atividade do sistema durante sua interação. Por exemplo, efeitos de deslizar em recursos de boas-vindas devem facilitar o entendimento que a tela está avançando. Assim, a barra de progresso também facilita a compreensão do estado da tarefa em que o usuário se encontra`,
         images: [
             { id: 1, url: "/images/considerations/c20-1.png", text: `Tela de boas-vindas do aplicativo, onde está destacado a barra de progresso.` },
         ],
@@ -483,7 +483,7 @@ export const dummyConsiderations = [
         title: `23. Apresente efeitos de áudio quando ocorrer mudanças de tela`,
         category: [
             "Saída de Dados",
-            "Visual"
+            "Áudio"
         ],
         content: `Além das mudanças visuais, os usuários tendem a observar a mudança de telas por meio de instruções sonoras dadas pelos assistentes de voz`,
         images: [],
