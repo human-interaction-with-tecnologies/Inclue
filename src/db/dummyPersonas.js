@@ -17,8 +17,8 @@ export const dummyPersonas = [
   {
     id: 3,
     name: "Keila Souza",
-    description: "Keila tem 32 anos e atua como catadora na região metropolitana de Belém. Ela estudou até a quinta série do ensino fundamental, aos 11 anos, devido à necessidade de ajudar sua mãe, que trabalhava na zona rural, a criar seus irmãos. Seus irmãos são gratos a ela pelo esforço e, recentemente, a presentearam com uma casa próxima a uma escola de ensino fundamental e médio. Este ano, Keila começou a estudar na escola, e os professores a motivaram a utilizar o Pix como forma de aumentar sua renda. Assim, ela tem aprendido a utilizar o Pix e, sempre que tem dúvidas, recorre às professoras Joana e Carol, de português e informática.",
-    characteristics: ["Catadora", "32 anos", "Ensino Fundamental Incompleto","Dúvidas para compreender textos e ícones"],
+    description: "Keila tem 52 anos e atua como catadora na região metropolitana de Belém. Ela estudou até a quinta série do ensino fundamental, aos 11 anos, devido à necessidade de ajudar sua mãe, que trabalhava na zona rural, a criar seus irmãos. Seus irmãos são gratos a ela pelo esforço e, recentemente, a presentearam com uma casa próxima a uma escola de ensino fundamental e médio. Este ano, Keila começou a estudar na escola, e os professores a motivaram a utilizar o Pix como forma de aumentar sua renda. Assim, ela tem aprendido a utilizar o Pix e, sempre que tem dúvidas, recorre às professoras Joana e Carol, de português e informática.",
+    characteristics: ["Catadora", "52 anos", "Ensino Fundamental Incompleto","Dúvidas para compreender textos e ícones"],
     image: "/images/personas/persona-3.jpg"
   },
   {
